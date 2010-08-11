@@ -1,0 +1,9 @@
+Plugins att enablea: ENABLED_PLUGINS
+
+Settings:
+
+I config.php, lägg till
+
+$Configuration['Garden']['InputFormatter'] = 'markdown';
+
+på rad 39.
