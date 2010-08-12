@@ -1,0 +1,32 @@
+
+.MenuSortable td.MenuGroup {
+	cursor: move;
+}
+
+.MenuItemsTable.MenuSortable {
+	cursor: move;
+}
+
+.MenuGroup h4 {
+	margin-bottom: 0.4em;
+}
+
+.MenuItemsTable, .MenuItemsTable * {
+	border: 0;
+}
+
+.MenuItemsTable {
+	margin: 0 0 0.8em 0;
+}
+
+.MenuGroup.Enabled {
+	background: #ffd;
+}
+
+.MenuGroup.Disabled {
+	background: #d3f0ff;
+}
+
+.TextBox.PageContent {
+	height: 20em;
+}
