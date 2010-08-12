@@ -31,22 +31,24 @@ class VotingPlugin extends Gdn_Plugin {
 		$this->DiscussionController_BeforeCommentMeta_Handler($Sender);
 	}
 	public function DiscussionController_BeforeCommentMeta_Handler($Sender) {
-		echo '<span class="Votes">';
-			$Session = Gdn::Session();
-			$Object = GetValue('Object', $Sender->EventArguments);
-			$ID = $Object->CommentID;
-			$CssClass = '';
-			$VoteUpUrl = '/discussion/votecomment/'.$ID.'/voteup/'.$Session->TransientKey().'/';
-			$VoteDownUrl = '/discussion/votecomment/'.$ID.'/votedown/'.$Session->TransientKey().'/';
-			if (!$Session->IsValid()) {
-				$VoteUpUrl = Gdn::Authenticator()->SignInUrl($Sender->SelfUrl);
-				$VoteDownUrl = $VoteUpUrl;
-				$CssClass = ' SignInPopup';
-			}
-			echo Anchor(Wrap(Wrap('Vote Up', 'i'), 'i', array('class' => 'ArrowSprite SpriteUp', 'rel' => 'nofollow')), $VoteUpUrl, 'VoteUp'.$CssClass);
-			echo Wrap(StringIsNullOrEmpty($Object->Score) ? '0' : $Object->Score);
-			echo Anchor(Wrap(Wrap('Vote Down', 'i'), 'i', array('class' => 'ArrowSprite SpriteDown', 'rel' => 'nofollow')), $VoteDownUrl, 'VoteDown'.$CssClass);
-		echo '</span>';
+		if ($Sender->EventArguments['Type'] == 'Comment') {
+	    	echo '<span class="Votes">';
+				$Session = Gdn::Session();
+				$Object = GetValue('Object', $Sender->EventArguments);
+				$ID = $Object->CommentID;
+				$CssClass = '';
+				$VoteUpUrl = '/discussion/votecomment/'.$ID.'/voteup/'.$Session->TransientKey().'/';
+				$VoteDownUrl = '/discussion/votecomment/'.$ID.'/votedown/'.$Session->TransientKey().'/';
+				if (!$Session->IsValid()) {
+					$VoteUpUrl = Gdn::Authenticator()->SignInUrl($Sender->SelfUrl);
+					$VoteDownUrl = $VoteUpUrl;
+					$CssClass = ' SignInPopup';
+				}
+				echo Anchor(Wrap(Wrap('Vote Up', 'i'), 'i', array('class' => 'ArrowSprite SpriteUp', 'rel' => 'nofollow')), $VoteUpUrl, 'VoteUp'.$CssClass);
+				echo Wrap(StringIsNullOrEmpty($Object->Score) ? '0' : $Object->Score);
+				echo Anchor(Wrap(Wrap('Vote Down', 'i'), 'i', array('class' => 'ArrowSprite SpriteDown', 'rel' => 'nofollow')), $VoteDownUrl, 'VoteDown'.$CssClass);
+			echo '</span>';
+		}
 	}
 
 
@@ -77,13 +79,13 @@ class VotingPlugin extends Gdn_Plugin {
         // Only allow users to vote up or down by 1.
          $AllowVote = $FinalVote > -2 && $FinalVote < 2;
          
-         if ($AllowVote)
+         if ($AllowVote) {
             $Total = $CommentModel->SetUserScore($CommentID, $Session->UserID, $FinalVote);
+    	    $Sender->DeliveryType(DELIVERY_TYPE_BOOL);
+  		    $Sender->SetJson('TotalScore', $Total); 	     $Sender->SetJson('FinalVote', $FinalVote);
+     		$Sender->Render();
+		 }
       }
-      $Sender->DeliveryType(DELIVERY_TYPE_BOOL);
-      $Sender->SetJson('TotalScore', $Total);
-      $Sender->SetJson('FinalVote', $FinalVote);
-      $Sender->Render();
    }
 
 
