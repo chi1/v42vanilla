@@ -113,4 +113,9 @@ class VotingPlugin extends Gdn_Plugin {
 		$Sender->AddJSFile('plugins/Voting/voting.js');
    }
 
+
+   public function Setup() {
+
+   }
+
 }
