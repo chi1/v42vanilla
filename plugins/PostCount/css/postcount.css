@@ -1,0 +1,11 @@
+ul.MessageList div.Comment div.Meta {
+   min-height: 50px;
+}
+
+ul.MessageList div.Comment div.Meta span {
+   line-height: inherit;
+}
+
+ul.MessageList div.Comment div.Meta div.PostCount {
+   line-height: normal;
+}
