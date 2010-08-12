@@ -16,7 +16,7 @@ $PluginInfo['Voting'] = array(
    'Author' => "Mark O'Sullivan",
    'AuthorEmail' => 'mark@vanillaforums.com',
    'AuthorUrl' => 'http://markosullivan.ca',
-   'RequiredApplications' => array('Vanilla' => '2.0.1')
+   'RequiredApplications' => array('Vanilla' => '2.0.3')
 );
 
 class VotingPlugin extends Gdn_Plugin {
