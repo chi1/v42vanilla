@@ -3,13 +3,13 @@
 */
 
 html {
-background: #003647;
+	background:#003647 url(bg_top.png) repeat-x;
 }
 
 body {
-	background:#003647 url(bg_top.png) repeat-x;
+	background:transparent;
 	color:#333333;
-	font-family:Georgia,"Times New Roman",Times,serif;
+	font-family:"Helvetica","Arial",sans-serif;
 	font-weight:normal;
 	text-align:center;
 }
@@ -597,20 +597,22 @@ div.Box {
 
 
 ul.PanelInfo {
-	border-top:1px solid #c4c4c4;
+	border-top:0px solid #c4c4c4;
 }
 
 ul.PanelInfo li.Active {
-	border-bottom:1px solid #C4C4C4;
+	background:#f2f2f2;
+	border-bottom:0px solid #C4C4C4;
 }
 
 ul.PanelInfo li {
-	background:#e1e1e1;
-	border-bottom:1px solid #c4c4c4;
+	background:#f2f2f2;
+	border-bottom:0px solid #c4c4c4;
 }
 
 ul.PanelInfo li.Active a {
 	color:#282828;
+	font-weight: bold;
 }
 
 ul.PanelInfo div.Meta strong {
