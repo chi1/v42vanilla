@@ -1,5 +1,17 @@
 jQuery(document).ready(function($) {
-   
+ 
+	//show/hide-link on hidden comments
+	$('a.showhidecomment').live('click', function() {
+		var parentli = $(this).parent().get(0);
+		var parentol = $(parentli).parent().get(0);
+		var hidden = $(parentol).children().get(1);
+		$(hidden).toggle();
+		return false;
+
+//onclick="javascript: document.getElementById(\'CommentNo' . $CommentID . '\').style.display = \'block\'; return false;"
+	});
+
+  
    // Handle Vote button clicks   
    $('div.VotesBox a').live('click', function() {
       var btn = this;
