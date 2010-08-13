@@ -12,14 +12,9 @@ Contact Vanilla Forums Inc. at support [at] vanillaforums [dot] com
  * An associative array of information about this application.
  */
 $ThemeInfo['Varg42'] = array(
-   'Name' => 'Varg42',
-   'Description' => "Varg42 theme, based on Joie by Brendan Sera-Shriar",
+   'Description' => "Ett jävligt hett tema, baserat på Rounder.",
    'Version' => '1.0',
-   'Author' => "v42",
+   'Author' => "Varg42. Based on work by Brendan Sera-Shriar",
    'AuthorEmail' => '',
    'AuthorUrl' => 'http://varg42.se'
-   
-	
 );
-   
-   

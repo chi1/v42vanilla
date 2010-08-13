@@ -15,7 +15,9 @@
             
             	<h1 class="Title"><a href="{link path="/"}">{logo}</a></h1>
                 
-                
+                <div id="t-right">
+					<p class="intro">This is just place holder text. Use the default master to put whatever you want here!</p>
+				</div>
 
                 
                   <!-- Start menu -->
@@ -48,7 +50,6 @@
       <div id="Body">
       
          <!-- Start body content: helper menu and discussion list -->
-      
       
          <div id="Content">{asset name="Content"}</div>
          
