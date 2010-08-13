@@ -363,6 +363,10 @@ a.Bookmarking {
 
 /* ============================================================= discussions */
 
+div.hiddencomment {
+	display: none;
+}
+
 #DiscussionForm h2 {
 	font-size:19px;
 	font-weight:normal;

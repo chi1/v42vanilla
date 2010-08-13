@@ -24,6 +24,7 @@ class VotingPlugin extends Gdn_Plugin {
 	public function PostController_Render_Before($Sender) {
 		$Sender->AddCSSFile('plugins/Voting/design/voting.css');
 	}
+
 	/**
 	 * Insert the voting html on comments in a discussion.
 	 */
@@ -51,6 +52,30 @@ class VotingPlugin extends Gdn_Plugin {
 		}
 	}
 
+
+	/* two functions to hide unwanted commments */
+	public function DiscussionController_BeforeCommentDisplay_Handler($Sender) {
+		if ($Sender->EventArguments['Type'] == 'Comment') {
+//			$Session = Gdn::Session();
+			$Object = GetValue('Object', $Sender->EventArguments);
+			$CommentID = $Object->CommentID;
+			$score = StringIsNullOrEmpty($Object->Score) ? 0 : $Object->Score;
+			if ($score < 0) {
+				echo '<p>Comment by ' . UserAnchor(UserBuilder($Object, 'Insert')) . ' with score ' . $score . ' hidden. <a href="#" onclick="javascript: document.getElementById(\'CommentNo' . $CommentID . '\').style.display = \'block\'; return false;">Show</a></p>' . "\n";
+				echo '<div id="CommentNo' . $CommentID . '" class="hiddencomment">';
+			}
+		}
+	}
+
+	public function DiscussionController_AfterComment_Handler($Sender) {
+		if ($Sender->EventArguments['Type'] == 'Comment') {
+			$Object = GetValue('Object', $Sender->EventArguments);
+			$score = StringIsNullOrEmpty($Object->Score) ? 0 : $Object->Score;
+			if ($score < 0) {
+				echo '</div>';
+			}
+		}
+	}
 
    /**
 	 * Add the vote.js file to discussions page, and handle sorting of answers.
