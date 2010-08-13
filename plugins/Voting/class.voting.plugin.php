@@ -61,8 +61,9 @@ class VotingPlugin extends Gdn_Plugin {
 			$CommentID = $Object->CommentID;
 			$score = StringIsNullOrEmpty($Object->Score) ? 0 : $Object->Score;
 			if ($score < 0) {
-				echo '<p>Comment by ' . UserAnchor(UserBuilder($Object, 'Insert')) . ' with score ' . $score . ' hidden. <a href="#" onclick="javascript: document.getElementById(\'CommentNo' . $CommentID . '\').style.display = \'block\'; return false;">Show</a></p>' . "\n";
-				echo '<div id="CommentNo' . $CommentID . '" class="hiddencomment">';
+				echo '<li>' . "\n";
+				echo '<ol class="hiddencomment">' . "\n";
+				echo '<li class="hiddennotice">Comment by ' . UserAnchor(UserBuilder($Object, 'Insert')) . ' with score ' . $score . ' hidden. <a class="showhidecomment" href="#">Show/Hide</a></li>' . "\n";
 			}
 		}
 	}
@@ -72,7 +73,8 @@ class VotingPlugin extends Gdn_Plugin {
 			$Object = GetValue('Object', $Sender->EventArguments);
 			$score = StringIsNullOrEmpty($Object->Score) ? 0 : $Object->Score;
 			if ($score < 0) {
-				echo '</div>';
+				echo '</ol>' . "\n";
+				echo '</li>' . "\n";
 			}
 		}
 	}

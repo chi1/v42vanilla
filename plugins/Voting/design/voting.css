@@ -1,3 +1,8 @@
+ol.hiddencomment li.Comment {
+	display: none;
+	margin-left: 2em;
+}
+
 div.AnswerTabs {
 	border-bottom: 1px solid #999;
 	background: none;
