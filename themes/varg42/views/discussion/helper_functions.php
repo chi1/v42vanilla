@@ -27,6 +27,12 @@ function WriteComment($Object, $Sender, $Session, $CurrentOffset) {
 ?>
 <li class="<?php echo $CssClass; ?>" id="<?php echo $Id; ?>">
    <div class="Comment"> 
+	 <span class="Permalink">
+            <?php echo Anchor(Gdn_Format::Date($Object->DateInserted), $Permalink, 'Permalink', array('name' => 'Item_'.($CurrentOffset+1), 'rel' => 'nofollow')); ?>
+         </span>
+	<div class="OptionList">
+	         <?php WriteOptionList($Object, $Sender, $Session); ?>
+	</div>
       <div class="Meta">
          <?php $Sender->FireEvent('BeforeCommentMeta'); ?>
          <span class="Author">
@@ -36,16 +42,10 @@ function WriteComment($Object, $Sender, $Session, $CurrentOffset) {
             ?>
          </span>
          <br />
-         <span class="Permalink">
-            <?php echo Anchor(Gdn_Format::Date($Object->DateInserted), $Permalink, 'Permalink', array('name' => 'Item_'.($CurrentOffset+1), 'rel' => 'nofollow')); ?>
-         </span>
          <?php $Sender->FireEvent('AfterCommentMeta'); ?>
       </div>
       <div class="Message">
 			<?php $Sender->FireEvent('BeforeCommentBody'); ?>
-			<div class="OptionList">
-			         <?php WriteOptionList($Object, $Sender, $Session); ?>
-			</div>
 			<p><?php echo Gdn_Format::To($Object->Body, $Object->Format); ?></p>
 		</div>
       <?php $Sender->FireEvent('AfterCommentBody'); ?>

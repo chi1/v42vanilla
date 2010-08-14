@@ -442,6 +442,7 @@ div.Comment div.Message {
 
 div.OptionList {
 	text-align:right;
+	width:600px;
 }
 
 div.NumberedPager {
@@ -456,6 +457,11 @@ div.CommentForm {
 
 h2.DiscussionTitle {
 	font-size: 30px;
+}
+
+div.Comment span.Permalink {
+	float:left;
+	position:absolute;
 }
 
 
