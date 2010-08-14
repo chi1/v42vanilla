@@ -2,7 +2,8 @@
 $this->Title(T('All Discussions'));
 include($this->FetchViewLocation('helper_functions', 'discussions', 'vanilla'));
 
-WriteFilterTabs($this);
+/* Filtertabs are evil. I hate them.
+WriteFilterTabs($this);*/
 if ($this->DiscussionData->NumRows() > 0 || (is_object($this->AnnounceData) && $this->AnnounceData->NumRows() > 0)) {
 ?>
 <ul class="DataList Discussions">

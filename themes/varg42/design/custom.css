@@ -219,10 +219,6 @@ div.Menu {
 	color:#fff;
 }
 
-div.Tabs div.SubTab {
-	background:#fff;
-}
-
 div.Preview {
 	background:#fff;
 }
@@ -418,6 +414,50 @@ div.Comment div.CommentForm textarea {
 	width:600px;
 }
 
+div.Comment {
+	clear:both;
+	margin-top:10px;
+	margin-bottom:10px;
+	overflow:auto;
+}
+
+div.Comment div.Meta {
+	width:110px;
+	float:left;
+	position:absolute;
+	background:#f2f2f2 none repeat scroll 0 0;
+	color:#282828;
+	border:1px solid #c4c4c4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:0px 10px 0px 10px;
+	text-align:center;
+}
+
+div.Comment div.Message {
+	float:right;
+	width:470px;
+}
+
+div.OptionList {
+	text-align:right;
+}
+
+div.NumberedPager {
+	margin-top:20px;
+	clear:both;
+}
+
+div.CommentForm {
+	margin-top:20px;
+	clear:both;
+}
+
+h2.DiscussionTitle {
+	font-size: 30px;
+}
+
 
 /* ============================================================= activities */
 
@@ -585,7 +625,9 @@ input.DateBox, input.InputBox, input.SmallInput, textarea {
 div.Box {	
 	background:#f2f2f2 none repeat scroll 0 0;
 	color:#282828;
-	;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 #Panel {
