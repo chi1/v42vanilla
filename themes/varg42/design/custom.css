@@ -524,6 +524,10 @@ form.Activity textarea {
 
 /* ============================================================= profile page */
 
+div.Profile {
+	min-height:230px; /* number officially pulled out of my ass */
+}
+
 body.Profile #Content {
 	float:left;
 	width:630px;
