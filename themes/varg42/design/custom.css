@@ -163,9 +163,10 @@ ul#Menu {
 
 div.Menu {
 	float:left;
-	margin:70px 0 0 20px;
+	margin:42px 0 0 20px; /* finns nog en smartare lösning än 42px margin här, men x) */
 	text-align:left;
 	width:960px;
+	border-bottom:3px
 }
 
 #Head h1.Title a:hover{
@@ -173,28 +174,22 @@ div.Menu {
 	font-size:3em;
 }
 
-#Menu a, #Menu li.Active a {
-	-moz-border-radius-bottomleft:3px;
-	-moz-border-radius-bottomright:3px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-topright:3px;
-	background:#f2f2f2;
-	border:1px solid #c4c4c4;
-	color:#282828;
+#Menu a {
+	color:#fff;
 }
 
-#Menu li a:hover,#Menu li.Active a:hover {
-	-moz-border-radius-bottomleft:3px;
-	-moz-border-radius-bottomright:3px;
-	background:#c4c4c4;
-	color:#282828 !important;
+li.Highlight {
+	border-bottom:3px solid #fff;
 }
 
-#Menu li ul li a:hover,#Menu li.Active ul li a:hover {
-	-moz-border-radius-bottomleft:3px;
-	-moz-border-radius-bottomright:3px;
-	background:#c4c4c4;
-	color:#282828 !important;
+#Menu li a:hover,#Menu li.Highlight a:hover {
+	background:none;
+	border-bottom:3px solid #447BB3;
+}
+
+#Menu li ul li a:hover,#Menu li.Highlight ul li a:hover {
+	background:none;
+	border-bottom:3px solid #447BB3;
 }
 
 #Menu ul, #Menu li.Active {
