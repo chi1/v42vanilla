@@ -5,5 +5,6 @@ Settings:
 I config.php, lägg till
 
 $Configuration['Garden']['InputFormatter'] = 'markdown';
+$Configuration['Garden']['Profile']['ShowAbout'] = FALSE;
 
 på rad 39.

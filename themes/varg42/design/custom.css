@@ -525,14 +525,20 @@ form.Activity textarea {
 /* ============================================================= profile page */
 
 body.Profile #Content {
-
+	float:left;
 	width:630px;
 }
 
 body.Profile #Panel {
 
-	padding:20px 0 0 20px;
+	padding:20px 20px 0px 0px;
 
+}
+
+div.About {
+	float:left;
+	position:absolute;
+	width:330px; /* number officially pulled out of my ass. Borde passa ~ med defaultsettings på preview... */
 }
 
 div.User h1 {
@@ -544,10 +550,18 @@ div.User h1 {
 	color:#282828;
 }
 
+div.Photo {
+	float:right;
+	position:absolute;
+	clear:both;
+	width:630px;
+}
+
 div.Photo img{
 	border:1px solid #282828;
 	padding:2px;
 	margin-bottom:10px;
+	float:right;
 
 }
 
