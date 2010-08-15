@@ -31,10 +31,10 @@ function WriteComment($Object, $Sender, $Session, $CurrentOffset) {
             <?php echo Anchor(Gdn_Format::Date($Object->DateInserted), $Permalink, 'Permalink', array('name' => 'Item_'.($CurrentOffset+1), 'rel' => 'nofollow')); ?>
          </span>
 	<div class="OptionList">
+		 <?php $Sender->FireEvent('BeforeCommentMeta'); ?>
 	         <?php WriteOptionList($Object, $Sender, $Session); ?>
 	</div>
       <div class="Meta">
-         <?php $Sender->FireEvent('BeforeCommentMeta'); ?>
          <span class="Author">
             <?php
             echo UserPhoto($Author);

@@ -45,9 +45,9 @@ class VotingPlugin extends Gdn_Plugin {
 					$VoteDownUrl = $VoteUpUrl;
 					$CssClass = ' SignInPopup';
 				}
-				echo Anchor(Wrap(Wrap('Vote Up', 'i'), 'i', array('class' => 'ArrowSprite SpriteUp', 'rel' => 'nofollow')), $VoteUpUrl, 'VoteUp'.$CssClass);
-				echo Wrap(StringIsNullOrEmpty($Object->Score) ? '0' : $Object->Score);
 				echo Anchor(Wrap(Wrap('Vote Down', 'i'), 'i', array('class' => 'ArrowSprite SpriteDown', 'rel' => 'nofollow')), $VoteDownUrl, 'VoteDown'.$CssClass);
+				echo Wrap(StringIsNullOrEmpty($Object->Score) ? '0' : $Object->Score);
+				echo Anchor(Wrap(Wrap('Vote Up', 'i'), 'i', array('class' => 'ArrowSprite SpriteUp', 'rel' => 'nofollow')), $VoteUpUrl, 'VoteUp'.$CssClass);
 			echo '</span>';
 		}
 	}

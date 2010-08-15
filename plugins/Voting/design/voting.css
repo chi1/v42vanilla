@@ -75,9 +75,12 @@ ul.DataList div.Meta strong {
 }
 ul.MessageList li.Item {
 	background: #fff;
+	padding:0px;
+	margin:0px;
 }
 ul.MessageList div.Meta {
 	position: relative;
+	padding:0px;
 }
 ul.MessageList div.Meta span.Votes {
 	text-align: center;
@@ -89,7 +92,7 @@ ul.MessageList div.Meta span.Votes {
 }
 span.Votes a,
 span.Votes span {
-	display: block;
+
 }
 ul.MessageList div.Meta span.Votes span {
 	padding: 0;
