@@ -158,15 +158,19 @@ ul#Menu {
 #Head h1.Title a{
 	color:#447BB3;
 	font-size:3em;
+}
 
+#Head h1 {
+	height:150px;
 }
 
 div.Menu {
 	float:left;
-	margin:42px 0 0 20px; /* finns nog en smartare lösning än 42px margin här, men x) */
+	margin:24px 0 0 20px;  /*finns nog en smartare lösning än 24px margin här, men x) */
 	text-align:left;
 	width:960px;
 	border-bottom:3px
+	position:absolute;
 }
 
 #Head h1.Title a:hover{

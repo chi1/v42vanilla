@@ -53,7 +53,7 @@ ul.DataList div.Options {
 	top: 2px;
 	right: 197px;
 }
-ul.DataList div.Meta {
+/*ul.DataList div.Meta {
 	z-index: 5;
 }
 div.Meta span.CommentCount {
@@ -65,14 +65,14 @@ ul.DataList div.Meta strong {
 	-webkit-box-shadow: 0px 0px 2px #777;
 
 	position:absolute;
-	/*
+	
 	right: 668px;
 	top: 6px;
-	*/
+	
 	top: 24px;
 	left: 668px;
 	white-space: nowrap;
-}
+}*/
 ul.MessageList li.Item {
 	background: #fff;
 	padding:0px;

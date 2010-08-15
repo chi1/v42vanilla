@@ -16,11 +16,6 @@
             
 				<h1><a class="Title" href="<?php echo Url('/'); ?>"><?php echo Gdn_Theme::Logo(); ?></a></h1>
                 
-                <div id="t-right">
-					<p class="intro">This is just place holder text. Use the default master to put whatever you want here!</p>
-				</div>
-
-                
                   <!-- Start menu -->
                  <div class="Menu">
             <?php
