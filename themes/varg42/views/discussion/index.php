@@ -21,9 +21,6 @@ if ($Session->IsValid()) {
          
       echo $DiscussionName;
    ?></h2>
-   <!--<div class="Backtodiscussions"><?php
-            echo Anchor(T('Back to Discussions'), 'discussions');
-   ?></div> FIXME: Vill vi ha den här länken? --> 
 
 <?php
    //echo $this->Pager->ToString('less');

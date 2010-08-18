@@ -10,21 +10,18 @@
          <?php if ($Blogpost->Closed == '1') { ?>
          <span class="Closed"><?php echo T('Closed'); ?></span>
          <?php } ?>
-
+            
             <?php 
             $count = $Blogpost->CountComments - 1;
-            $text = ($count > 0) ? $count . ' comments' : 'No comments.';
+            $text = ($count > 1) ? $count . ' kommentarer' : 'Inga kommentarer.';
+            
+           echo '<div class="BlogCommentCount">'.Anchor($text, '/discussion/'.$Blogpost->DiscussionID).'</div>';
 
-            echo '<span class="CommentCount">'.Anchor($text, '/discussion/'.$Blogpost->DiscussionID).'</span>';
-            echo '<span class="LastCommentDate">'.Gdn_Format::Date($Blogpost->FirstDate).'</span>'; // Should maybe use another css class?
-         
+         ?>         
                
-         ?>
+
       </div>
 </li>
 <?php endforeach; ?>
 </ul>
 
-<?php 
-
-echo Wrap(Anchor('More posts', '/categories/'.$BlogcategoryID, 'More')); ?>

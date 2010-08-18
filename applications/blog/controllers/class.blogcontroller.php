@@ -23,10 +23,14 @@ class BlogController extends Gdn_Controller {
    public function Index($value='')
    {
 	$BlogcategoryID = 1; // Edit this value
-	$Postsperpage = 10; // Edit this value
+	$Postsperpage = 1; // Edit this value
    	
        $BlogModel = new BlogModel();
        $this->BlogData = $BlogModel->GetBlog('0', $Postsperpage, array('d.CategoryID' => $BlogcategoryID));
+
+      // Add Modules
+      $this->AddModule('GuestModule');
+      $this->AddModule('RecentActivityModule');
 
        $this->Render();
    }

@@ -10,6 +10,7 @@ function WriteComment($Object, $Sender, $Session, $CurrentOffset) {
    $Sender->EventArguments['Type'] = $Type;
    $Sender->EventArguments['Author'] = $Author;
    $CssClass = 'Item Comment';
+   $CssClass .= $Alt.' ';
    if ($Type == 'Comment') {
       $Sender->EventArguments['Comment'] = $Object;   
       $Id = 'Comment_'.$Object->CommentID;
@@ -36,11 +37,9 @@ function WriteComment($Object, $Sender, $Session, $CurrentOffset) {
 	</div>
       <div class="Meta">
          <span class="Author">
-            <?php
-            echo UserPhoto($Author);
+            <?php            
             echo UserAnchor($Author);
-            ?>
-         </span>
+            echo UserPhoto($Author); ?></span>
          <br />
          <?php $Sender->FireEvent('AfterCommentMeta'); ?>
       </div>
