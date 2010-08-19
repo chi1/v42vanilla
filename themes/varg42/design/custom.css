@@ -602,7 +602,7 @@ div.Photo {
 	float:right;
 	position:absolute;
 	clear:both;
-	width:630px;
+	margin-left:580px; // fulhakk
 }
 
 div.Photo img{
