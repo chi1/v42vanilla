@@ -1,0 +1,30 @@
+<?php
+// Date: Thu, 19 Aug 2010 14:05:55 -0400 ?
+$Definition['The user and all related content has been deleted.'] = 'Användaren och allt relaterat innehåll har raderats.';
+$Definition['Send %s a Message'] = 'Skicka %s ett meddelande';
+$Definition['Notify me of private messages.'] = 'Informera mig om privata meddelanden.';
+$Definition['Notify me when I am added to private conversations.'] = 'Informera mig när jag är tillagd i en privat konversation.';
+$Definition['Inbox'] = 'Inkorg';
+$Definition['Conversations'] = 'Konversationer';
+$Definition['New conversations in the last day'] = 'Nya konversationer från det senaste dygnet';
+$Definition['New conversations in the last week'] = 'Nya konversationer från den senaste veckan';
+$Definition['Conversation Messages'] = 'Meddelande i konversationen';
+$Definition['New messages in the last day'] = 'Nya meddelanden från det senaste dygnet';
+$Definition['New messages in the last week'] = 'Nya meddelanden från den senaste veckan';
+$Definition['All Conversations'] = 'Alla konversationer';
+$Definition['Add Message'] = 'Lägg till meddelande';
+$Definition['Start a New Conversation'] = 'Starta en ny konversation';
+$Definition['Blank Message'] = 'Tomt meddelande';
+$Definition['%s message'] = '%s meddelande';
+$Definition['%s messages'] = '%s meddelanden';
+$Definition['%s new'] = '%s nya';
+$Definition['Add a Message'] = 'Lägg till ett meddelande';
+$Definition['You do not have any conversations.'] = 'Du är inte med i några konversationer';
+$Definition['In this Conversation'] = 'I denna konversation';
+$Definition['%s deleted this conversation.'] = '%s raderade denna konversation';
+$Definition['Delete Conversation'] = 'Radera konversation';
+$Definition['Add People to this Conversation'] = 'Lägg till personer i konversationen';
+$Definition['The conversation has been cleared.'] = 'Konversationen har blivit tömd.';
+$Definition['Just you!'] = 'Bara du!';
+$Definition['%s and you'] = '%s och du';
+$Definition['Your changes were saved.'] = 'Dina ändringar har sparats!';
