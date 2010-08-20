@@ -284,13 +284,14 @@ div.MessageForm a.Cancel:hover, div.MorePager a:hover, a.TabLink:hover, div.Tabs
 }
 
 ul.MessageList li.Item {
-	border-bottom:0px solid #e1e1e1; // stupid override? check.
+	border-bottom:0px solid #e1e1e1; /* stupid override? check. */
+	padding:0;
 }
 
 ul.DataList li.Item {
-	border-bottom:0px solid #e1e1e1; // stupid override? check.
+	border-bottom:0px solid #e1e1e1; /* stupid override? check. */
 	margin:0;
-	padding:4px 0 10px;
+	padding:4px 4px 10px 4px;
 }
 
 .Mine {
@@ -426,26 +427,36 @@ input#Form_SaveComment.Button.CommentButton{
 /* used for lists of message-based content (discussion comments, private */
 											
 ul.MessageList, ul.MessageList li {
-	margin:0 0 10px;
+	margin:0;
+	padding:0;
 }
 
-div.Comment div.CommentForm textarea {
+ul.Conversation li {
+	margin:0;
+}
+
+div.Comment div.CommentForm textarea, div#MessageForm textarea {
 	width:600px;
 }
 
-div.Comment {
+div.Comment, div.ConversationMessage {
 	clear:both;
-	margin-top:10px;
-	margin-bottom:10px;
+	padding-top:10px;
+	padding-bottom:10px;
 	overflow:auto;
 	min-height:170px; // FIXME: snälla säg att det finns ett bättre sätt
 }
 
 /*
-FIXME: Vet inte riktigt vad som ska vara annorlunda för alternate.. bgcolor ser halvdant ut.
+FIXME: Vet inte riktigt vad som ska vara annorlunda för alternate.. bgcolor ser halvdant ut. */
+
 li.Item:nth-child(even) {
-	background:#F5F6FF;
-}*/
+	background:#f2f2f2;
+}
+
+li.Item:nth-child(odd) {
+	background:#fbfbfb;
+}
 
 ul.MessageList div.Meta span.Author {
 	text-align:center;
@@ -458,22 +469,21 @@ ul.MessageList div.Meta span.Author img {
 	margin-right:5px;
 }
 
-div.Comment div.Meta {
+div.ConversationMessage div.Meta, div.ConversationMessage div.Message {
+	margin-top:20px;
+}
+
+div.Comment div.Meta, div.ConversationMessage div.Meta {
 	width:110px;
 	float:left;
 	position:absolute;
-	background:#f2f2f2 none repeat scroll 0 0;
 	color:#282828;
-	border:1px solid #c4c4c4;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	padding:0px 10px 10px 10px;
 	margin-left:10px;
 	text-align:center;
 }
 
-div.Comment div.Message {
+div.Comment div.Message, div.ConversationMessage div.Message {
 	float:right;
 	width:470px;
 }
@@ -498,9 +508,11 @@ h2.DiscussionTitle {
 	font-size: 30px;
 }
 
-div.Comment span.Permalink {
+div.Comment span.Permalink, div.ConversationMessage span.Permalink {
 	float:left;
 	position:absolute;
+	margin-left:10px;
+	font-size:0.9em;
 }
 
 
@@ -540,6 +552,7 @@ ul.Activities li.Activity div.Activity {
 
 ul.Activities div.Photo {
 	padding:0;
+	margin:2px 0 0 5px;
 }
 
 body.Profile ul.Activities {
