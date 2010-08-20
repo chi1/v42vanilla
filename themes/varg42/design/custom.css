@@ -506,6 +506,9 @@ div.Comment span.Permalink {
 
 /* ============================================================= activities */
 
+h2#Notifications {
+	margin-top:210px; // FIXME: number pulled out of my ass
+}
 
 ul.Activities div.Excerpt a,
 ul.Activities div.Meta a {
@@ -529,6 +532,24 @@ ul.Activities li.CommentForm input.Button {
 form.Activity textarea {
 	width:600px;
 }
+
+ul.Activities li.Activity div.Activity {
+	margin-left:63px;
+	width:578px; // FIXME: Guess where I got these numbers.
+}
+
+ul.Activities div.Photo {
+	padding:0;
+}
+
+body.Profile ul.Activities {
+	border:0;
+}
+
+div.Profile>div.Photo {
+	margin-left:400px;
+}
+
 
 /* ==================================================== New Conversation Form */
 
@@ -598,7 +619,7 @@ div.User h1 {
 	color:#282828;
 }
 
-div.Photo {
+ul.Conversations div.Photo {
 	float:right;
 	position:absolute;
 	clear:both;

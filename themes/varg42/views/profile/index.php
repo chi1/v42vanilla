@@ -3,6 +3,7 @@
    <?php
    include($this->FetchViewLocation('user'));
    //include($this->FetchViewLocation('tabs'));
-   //include($this->FetchViewLocation($this->_TabView, $this->_TabController, $this->_TabApplication));
+   echo '<h2 id="Notifications">Händelser</h2>'; // FIXME: Hårdkodat :'/
+   include($this->FetchViewLocation('Activity', 'Profile', 'Dashboard'));
    ?>
 </div>
