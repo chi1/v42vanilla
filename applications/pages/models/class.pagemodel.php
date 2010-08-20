@@ -43,7 +43,7 @@ class Gdn_PageModel extends Gdn_Model {
 	/* name <-> url */
 	public function Save($FormValues)
 	{
-		$this->Validation->ApplyRule('Url', 'Required');
+		//$this->Validation->ApplyRule('Url', 'Required');
 		
 		$Url = $FormValues['Url'];
 		$Url2 = '';
@@ -52,18 +52,18 @@ class Gdn_PageModel extends Gdn_Model {
 			$Url = str_replace('//', '/', $Url);
 		}
 		
-		if (!$this->_VerifyName($Url))
-			$this->Validation->AddValidationResult('Url', 'Url can only contain word/number characters and slashes');
+		//if (!$this->_VerifyName($Url))
+		//	$this->Validation->AddValidationResult('Url', 'Url can only contain word/number characters and slashes');
 		
 		$Original = isset($FormValues['Page']) ? $FormValues['Page'] : '';
-		if ($Original != $Url && $this->Resolve($Url))
-			$this->Validation->AddValidationResult('Url', 'That url is already being used by another page!');
+		//if ($Original != $Url && $this->Resolve($Url))
+		//	$this->Validation->AddValidationResult('Url', 'That url is already being used by another page!');
 		
-		if ($Original && !$this->Resolve($Original))
-			$this->Validation->AddValidationResult('Page', 'I can\'t find the page you told me to edit!');
+		//if ($Original && !$this->Resolve($Original))
+		//	$this->Validation->AddValidationResult('Page', 'I can\'t find the page you told me to edit!');
 		
-		if (!$this->Validate($FormValues))
-			return false;
+		//if (!$this->Validate($FormValues))
+		//	return false;
 		
 		if ($Original)
 			$Page = $this->Get($Original);
