@@ -516,6 +516,12 @@ div.Comment span.Permalink, div.ConversationMessage span.Permalink {
 	font-size:0.9em;
 }
 
+ul.MessageList div.Comment pre, div.Preview div.Message pre {
+	background:0;
+	border:0px solid #000;
+	padding:0;
+}
+
 
 /* ============================================================= activities */
 

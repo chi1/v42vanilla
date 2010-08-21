@@ -14,7 +14,7 @@ Settings:
 
 I config.php, lägg till
 
-$Configuration['Garden']['InputFormatter'] = 'markdown';
+$Configuration['Garden']['InputFormatter'] = 'BBcode';
 $Configuration['Garden']['Profile']['ShowAbout'] = FALSE;
 $Configuration['Garden']['Thumbnail']['Size'] = 100;
 $Configuration['Garden']['Locale'] = 'sv-SE';
