@@ -257,6 +257,13 @@ body.Entry form ul li label {
 	width:670px;
 }
 
+#DiscussionContent {
+	float:left;
+	margin:0 0 40px;
+	padding:15px 10px 20px;
+	width:940px;
+}
+
 div.MessageForm, div.Tabs {
 	background:#f2f2f2;
 	border:1px solid #c4c4c4;
@@ -400,7 +407,7 @@ div.CommentForm textarea {
 	height:100px;
 	margin:0 0 6px;
 	min-height:100px;
-	width:642px;
+	width:912px;
 }
 
 li.Editing {
@@ -435,7 +442,11 @@ ul.Conversation li {
 	margin:0;
 }
 
-div.Comment div.CommentForm textarea, div#MessageForm textarea {
+div.Comment div.CommentForm textarea {
+	width:912px;
+}
+
+div#MessageForm textarea {
 	width:642px;
 }
 
@@ -483,7 +494,13 @@ div.Comment div.Meta, div.ConversationMessage div.Meta {
 	text-align:center;
 }
 
-div.Comment div.Message, div.ConversationMessage div.Message {
+div.Comment div.Message {
+	float:right;
+	width:780px;
+	padding-right:10px;
+}
+
+div.ConversationMessage div.Message {
 	float:right;
 	width:520px;
 	padding-right:10px;
@@ -491,7 +508,7 @@ div.Comment div.Message, div.ConversationMessage div.Message {
 
 div.OptionList {
 	text-align:right;
-	width:642px;
+	width:930px;
 	height:22px;
 }
 

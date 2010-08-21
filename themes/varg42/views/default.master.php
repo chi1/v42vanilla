@@ -52,13 +52,18 @@
       <div id="Body">
       
          <!-- Start body content: helper menu and discussion list -->
-      
+         <?php if ($this->ControllerName == 'discussioncontroller') { // Lite fulhakk för att gömma panelen ibland
+         ?>
+         <div id="DiscussionContent"><?php $this->RenderAsset('Content'); ?></div>
+         <?php } else { ?>
          <div id="Content"><?php $this->RenderAsset('Content'); ?></div>
+         <?php } ?>
          
          <!-- End body content -->
          
          <!-- Start panel modules: search, categories, and bookmarked discussions -->
          
+         <?php if ($this->ControllerName != 'discussioncontroller') { ?>
          <div id="Panel">
 		 
          <div id="Search"><?php
@@ -74,6 +79,7 @@
 		<?php $this->RenderAsset('Panel'); ?>
          
          </div>
+         <?php } ?>
          
          <!-- End panel -->
 
