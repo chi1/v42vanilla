@@ -253,8 +253,8 @@ body.Entry form ul li label {
 #Content {
 	float:left;
 	margin:0 0 40px;
-	padding:15px 20px 20px;
-	width:630px;
+	padding:15px 10px 20px;
+	width:670px;
 }
 
 div.MessageForm, div.Tabs {
@@ -400,7 +400,7 @@ div.CommentForm textarea {
 	height:100px;
 	margin:0 0 6px;
 	min-height:100px;
-	width:600px;
+	width:642px;
 }
 
 li.Editing {
@@ -436,7 +436,7 @@ ul.Conversation li {
 }
 
 div.Comment div.CommentForm textarea, div#MessageForm textarea {
-	width:600px;
+	width:642px;
 }
 
 div.Comment, div.ConversationMessage {
@@ -479,18 +479,19 @@ div.Comment div.Meta, div.ConversationMessage div.Meta {
 	position:absolute;
 	color:#282828;
 	padding:0px 10px 10px 10px;
-	margin-left:10px;
+	margin-left:0px;
 	text-align:center;
 }
 
 div.Comment div.Message, div.ConversationMessage div.Message {
 	float:right;
-	width:470px;
+	width:520px;
+	padding-right:10px;
 }
 
 div.OptionList {
 	text-align:right;
-	width:600px;
+	width:642px;
 	height:22px;
 }
 
@@ -542,12 +543,12 @@ ul.Activities li.CommentForm input.Button {
 }
 
 form.Activity textarea {
-	width:600px;
+	width:642px;
 }
 
 ul.Activities li.Activity div.Activity {
 	margin-left:63px;
-	width:578px; // FIXME: Guess where I got these numbers.
+	width:618px; // FIXME: Guess where I got these numbers.
 }
 
 ul.Activities div.Photo {
@@ -560,7 +561,7 @@ body.Profile ul.Activities {
 }
 
 div.Profile>div.Photo {
-	margin-left:400px;
+	margin-left:440px;
 }
 
 
@@ -636,7 +637,7 @@ ul.Conversations div.Photo {
 	float:right;
 	position:absolute;
 	clear:both;
-	margin-left:580px; // fulhakk
+	margin-left:615px; // fulhakk
 }
 
 div.Photo img{
@@ -702,12 +703,12 @@ div.Popup .Footer {
 	background:#FFFFFF;
 	border:1px solid #f2f2f2;
 	color:#282828;
-	width:150px;
+	width:130px;
 }
 
 #Panel input.InputBox, div.AddPeople textarea.MultiComplete {
 	margin:0 5px 2px 5px;
-	width:180px;
+	width:165px;
 }
 
 input.DateBox, input.InputBox, input.SmallInput, textarea {
@@ -730,7 +731,7 @@ div.Box {
 #Panel {
 	float:right;
 	margin-bottom:50px;
-	width:250px;
+	width:230px;
 	padding:15px 20px 20px;
 }
 
