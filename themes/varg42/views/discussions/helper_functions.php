@@ -32,6 +32,8 @@ function WriteDiscussion($Discussion, &$Sender, &$Session, $Alt) {
       $Sender->FireEvent('BetweenDiscussion');
    else
       $FirstDiscussion = FALSE;
+      
+   $Commentscount = $Discussion->CountComments-1; // FIXME: Fulhakk, eh? :D Förstår inte varför förstaposten räknas som kommentar
 ?>
 <li class="<?php echo $CssClass; ?>">
    <?php
@@ -47,7 +49,7 @@ function WriteDiscussion($Discussion, &$Sender, &$Session, $Alt) {
          <?php if ($Discussion->Closed == '1') { ?>
          <span class="Closed"><?php echo T('Closed'); ?></span>
          <?php } ?>
-         <span class="CommentCount"><?php printf(Plural($Discussion->CountComments, '%s comment', '%s comments'), $Discussion->CountComments); ?></span>
+         <span class="CommentCount"><?php printf(Plural($Commentscount, '%s comment', '%s comments'), $Commentscount); ?></span>
          <?php
             if ($Session->IsValid()) {
                if ($CountUnreadComments == $Discussion->CountComments)

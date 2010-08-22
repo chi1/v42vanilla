@@ -18,5 +18,6 @@ $Configuration['Garden']['InputFormatter'] = 'BBcode';
 $Configuration['Garden']['Profile']['ShowAbout'] = FALSE;
 $Configuration['Garden']['Thumbnail']['Size'] = 100;
 $Configuration['Garden']['Locale'] = 'sv-SE';
+$Configuration['Garden']['Menu']['Sort'] = array('Blog', 'Discussions', 'Questions', 'Activity', 'Conversations', 'User', 'Dashboard'); // Nej, alla de där används inte.
 
 på rad 39.

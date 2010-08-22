@@ -329,8 +329,9 @@ ul.DataList div.Meta span.Announcement {
 	color:#fff;
 }
 
-ul.DataList li.Mine div.Meta a.Category {
-	background:#f2f2f2;
+ul.DataList div.Meta a.Category {
+	background:none;
+	font-weight:bold;
 }
 
 ul.Options li.Parent strong {
@@ -736,7 +737,6 @@ div.Popup .Footer {
 
 input.DateBox, input.InputBox, input.SmallInput, textarea {
 	border:1px solid #282828;
-	font-family:Georgia,"Times New Roman",Times,serif;;
 	font-size:12px;
 	padding:3px;
 }

@@ -96,3 +96,4 @@ $Definition['Advanced Forum Settings'] = 'Avancerade inställningar';
 $Definition['Deleting category...'] = 'Tar bort kategori...';
 $Definition['You have posted %1$s times within %2$s seconds. A spam block is now in effect on your account. You must wait at least %3$s seconds before attempting to post again.'] = 'Du har postat %1$s gånger på %2$s sekunder, spamskydded är därför aktiverat för dig. Du måste vänta %3$s sekunder innan du kan posta igen.';
 $Definition['Invalid category for deletion.'] = 'Kategoin verkar inte finnas.';
+$Definition['Profile'] = 'Profil';

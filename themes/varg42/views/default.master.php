@@ -31,7 +31,7 @@
 							if (is_numeric($CountNotifications) && $CountNotifications > 0)
 								$Name .= ' <span>'.$CountNotifications.'</span>';
 								
-							$this->Menu->AddLink('User', $Name, '/profile/{UserID}/{Username}', array('Garden.SignIn.Allow'), array('class' => 'UserNotifications'));
+							$this->Menu->AddLink('User', T('Profile'), '/profile/{UserID}/{Username}', array('Garden.SignIn.Allow'), array('class' => 'UserNotifications'));
 							$this->Menu->AddLink('SignOut', T('Sign Out'), $Authenticator->SignOutUrl(), FALSE, array('class' => 'SignOut'));
 						} else {
 							$Attribs = array();
