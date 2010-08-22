@@ -331,7 +331,7 @@ ul.DataList div.Meta span.Announcement {
 	color:#fff;
 }
 
-ul.DataList div.Meta a.Category {
+ul.DataList div.Meta a.Category, ul.DataList li.Mine div.Meta a.Category {
 	background:none;
 	font-weight:bold;
 }
