@@ -81,6 +81,8 @@ a.Button,
    margin: 0;
    font-size: 11px;
    padding: 2px;
+   margin-left:5px;
+   margin-right:5px;
    background:#f2f2f2;
    color: #282828;
 	text-shadow: 0 1px 0 #fff;
@@ -448,7 +450,7 @@ div.Comment div.CommentForm textarea {
 }
 
 div#MessageForm textarea {
-	width:642px;
+	width:912px;
 }
 
 div.Comment, div.ConversationMessage {
@@ -521,6 +523,10 @@ div.NumberedPager {
 div.CommentForm {
 	margin-top:20px;
 	clear:both;
+}
+
+div.Comment div.CommentForm {
+	width:912px;
 }
 
 h2.DiscussionTitle {
