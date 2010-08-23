@@ -19,5 +19,6 @@ $Configuration['Garden']['Profile']['ShowAbout'] = FALSE;
 $Configuration['Garden']['Thumbnail']['Size'] = 100;
 $Configuration['Garden']['Locale'] = 'sv-SE';
 $Configuration['Garden']['Menu']['Sort'] = array('Blog', 'Discussions', 'Questions', 'Activity', 'Conversations', 'User', 'Dashboard'); // Nej, alla de där används inte.
+$Configuration['Routes']['DefaultController'] = 'blog';
 
 på rad 39.

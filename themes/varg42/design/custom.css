@@ -81,8 +81,8 @@ a.Button,
    margin: 0;
    font-size: 11px;
    padding: 2px;
-   margin-left:5px;
-   margin-right:5px;
+   margin-left:3px;
+   margin-right:3px;
    background:#f2f2f2;
    color: #282828;
 	text-shadow: 0 1px 0 #fff;
@@ -738,7 +738,7 @@ div.Popup .Footer {
 
 #Panel input.InputBox, div.AddPeople textarea.MultiComplete {
 	margin:0 5px 2px 5px;
-	width:165px;
+	width:160px;
 }
 
 input.DateBox, input.InputBox, input.SmallInput, textarea {
