@@ -387,6 +387,19 @@ div.BlogCommentCount {
 	border-radius: 3px;
 }
 
+div.Blogbody {
+	text-indent:1em;
+	padding:10px;
+}
+
+div.Blogbody p {
+	padding-bottom:1em;
+}
+
+div.Blogbody p:nth-child(1) {
+	padding-bottom:0em; /* FIXME: Av någon anledning läggs en extra <p></p> i början av bloggposter. Fin liten fix för detta :D */
+}
+
 /* ============================================================= discussions */
 
 #DiscussionForm h2 {

@@ -1,8 +1,8 @@
-<ul class="DataList Blog">
+<ul class="Blog">
 <?php foreach ($this->BlogData->Result() as $Blogpost): ?>
 <li class="Item">
    <div class="ItemContent Blogpost">
-   	<?php echo Anchor(Gdn_Format::Text($Blogpost->Name), '/discussion/'.$Blogpost->DiscussionID, 'Title'); ?>
+   	<h2 class="DiscussionTitle"><?php echo Anchor(Gdn_Format::Text($Blogpost->Name), '/discussion/'.$Blogpost->DiscussionID, 'Title'); ?></h2>
    	<div class="Message Blogbody">
    		<p><?php echo Gdn_Format::To($Blogpost->Body, $Blogpost->Format); ?></p>
    	</div>
