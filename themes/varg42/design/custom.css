@@ -430,6 +430,15 @@ li.Editing {
 	background:#f2f2f2 none repeat scroll 0 0;
 }
 
+li.Editing div.Comment div.CommentForm {
+	width:780px;
+	float:right;
+}
+
+li.Editing div.Comment div.CommentForm textarea {
+	width:770px;
+}
+
 input#Form_SaveComment.Button.CommentButton{
 	margin-right:45px;
 }
