@@ -17,7 +17,7 @@ if (C('Vanilla.Categories.Use') && $this->CategoryID > 0 && $this->CategoryData-
       echo $this->Form->Errors();
       $this->FireEvent('BeforeFormInputs');
       
-      echo $this->Form->Label('Discussion Title', 'Name');
+      echo $this->Form->Label('Ämne', 'Name');
       echo $this->Form->TextBox('Name', array('maxlength' => 100));
       if (Gdn::Config('Vanilla.Categories.Use') === TRUE) {
          echo '<div class="Category">';
@@ -42,13 +42,13 @@ if (C('Vanilla.Categories.Use') && $this->CategoryID > 0 && $this->CategoryData-
          echo '<ul class="PostOptions">' . $Options .'</ul>';
 
       $this->FireEvent('BeforeFormButtons');
-      echo $this->Form->Button((property_exists($this, 'Discussion')) ? 'Save' : 'Posta diskussion', array('class' => 'Button DiscussionButton'));
+      echo $this->Form->Button((property_exists($this, 'Discussion')) ? 'Spara' : 'Posta diskussion', array('class' => 'Button DiscussionButton'));
       if (!property_exists($this, 'Discussion') || !is_object($this->Discussion) || (property_exists($this, 'Draft') && is_object($this->Draft))) {
          echo $this->Form->Button('Spara utkast', array('class' => 'Button DraftButton'));
       }
       echo $this->Form->Button('Förhandsgranska', array('class' => 'Button PreviewButton'));
       $this->FireEvent('AfterFormButtons');
-      echo Anchor(T('Cancel'), $CancelUrl, 'Avbryt');
+      echo Anchor(T('Cancel'), $CancelUrl, 'Cancel');
       echo "</div>\n";
       echo $this->Form->Close();
    ?>

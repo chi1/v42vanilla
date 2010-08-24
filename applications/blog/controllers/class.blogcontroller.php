@@ -17,6 +17,12 @@ class BlogController extends Gdn_Controller {
         $this->ShowOptions = TRUE;
         $this->Menu->HighlightRoute('/blog');
         $this->AddCssFile('style.css');
+        $this->AddJsFile('jquery.js');
+        $this->AddJsFile('jquery.livequery.js');
+        $this->AddJsFile('jquery.form.js');
+        $this->AddJsFile('jquery.popup.js');
+        $this->AddJsFile('jquery.gardenhandleajaxform.js');
+        $this->AddJsFile('global.js');
         $this->FireEvent('AfterInitialize');
    }
    

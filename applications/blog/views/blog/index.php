@@ -1,3 +1,6 @@
+<?php if (!defined('APPLICATION')) exit();
+$Session = Gdn::Session();
+?>
 <ul class="Blog">
 <?php foreach ($this->BlogData->Result() as $Blogpost): ?>
 <li class="Item">

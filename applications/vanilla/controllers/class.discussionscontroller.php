@@ -116,8 +116,8 @@ class DiscussionsController extends VanillaController {
       // Build a pager
       $PagerFactory = new Gdn_PagerFactory();
       $this->Pager = $PagerFactory->GetPager('MorePager', $this);
-      $this->Pager->MoreCode = 'More Discussions';
-      $this->Pager->LessCode = 'Newer Discussions';
+      $this->Pager->MoreCode = T('More Discussions');
+      $this->Pager->LessCode = T('Newer Discussions');
       $this->Pager->ClientID = 'Pager';
       $this->Pager->Configure(
          $Offset,
@@ -157,8 +157,8 @@ class DiscussionsController extends VanillaController {
       // Build a pager
       $PagerFactory = new Gdn_PagerFactory();
       $this->Pager = $PagerFactory->GetPager('MorePager', $this);
-      $this->Pager->MoreCode = 'More Discussions';
-      $this->Pager->LessCode = 'Newer Discussions';
+      $this->Pager->MoreCode = T('More Discussions');
+      $this->Pager->LessCode = T('Newer Discussions');
       $this->Pager->ClientID = 'Pager';
       $this->Pager->Configure(
          $Offset,
