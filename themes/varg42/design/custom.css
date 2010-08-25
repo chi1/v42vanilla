@@ -321,6 +321,10 @@ div.Tabs li a span {
 	color:#fff;
 }
 
+div.Tabs div.SubTab {
+	background:none;
+}
+
 ul.DataList div.Meta strong {
 	background:#447BB3;
 	color:#fff;
@@ -814,7 +818,7 @@ ul.PanelInfo div.Meta strong {
 /* ============================================================= footer */
 
 #Foot {
-	background:transparent url(bg_bottom_corners.png) bottom no-repeat;
+	background:#fff;
 	clear:both;
 	color:#70727C;
 }

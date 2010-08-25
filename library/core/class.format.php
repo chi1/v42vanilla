@@ -243,6 +243,18 @@ class Gdn_Format {
                $Mixed2 = preg_replace("#\[size=[\"']?(.*?)[\"']?\]#si",'<font size="\\1">',$Mixed2);
                $Mixed2 = str_ireplace('[/font]', '</font>', $Mixed2);
 
+               /* FIXME:
+               BEGIN VARG42 CUSTOM BBCODES.
+               */               
+
+               $Mixed2 = preg_replace("#\[h1\](.*?)\[/h1\]#si",'<h1 class="Message">\\1</h1>',$Mixed2);	
+               $Mixed2 = preg_replace("#\[h2\](.*?)\[/h2\]#si",'<h2 class="Message">\\1</h2>',$Mixed2);	
+               $Mixed2 = preg_replace("#\[h3\](.*?)\[/h3\]#si",'<h3 class="Message">\\1</h3>',$Mixed2);	
+               
+               /* FIXME:
+               END VARG42 CUSTOM BBCODES.
+               */                   
+
                $Mixed2 = preg_replace('#\[/?left\]#si', '', $Mixed2);
                $Mixed2 = Gdn_Format::Links($Mixed2);
                $Mixed2 = Gdn_Format::Mentions($Mixed2);
