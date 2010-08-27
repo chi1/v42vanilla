@@ -53,9 +53,9 @@ if ($this->Discussion->Closed == '1') {
    echo $this->FetchView('comment', 'post');
 } else {
 ?>
-   <div class="Foot">
+   <div class="BiggestButton">
       <?php
-      echo Anchor(T('Add a Comment'), Gdn::Authenticator()->SignInUrl($this->SelfUrl), 'TabLink'.(C('Garden.SignIn.Popup') ? ' SignInPopup' : ''));
+      echo Anchor(T('Add a Comment'), Gdn::Authenticator()->SignInUrl($this->SelfUrl), 'WriteComment'.(C('Garden.SignIn.Popup') ? ' SignInPopup' : ''));
       ?> 
    </div>
    <?php 
