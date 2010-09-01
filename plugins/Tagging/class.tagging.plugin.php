@@ -60,7 +60,7 @@ class TaggingPlugin extends Gdn_Plugin {
       if ($Sender->Head) {
          $Sender->AddJsFile('discussions.js');
          $Sender->AddJsFile('bookmark.js');
-	 $Sender->AddJsFile('js/library/jquery.menu.js');
+			$Sender->AddJsFile('js/library/jquery.menu.js');
          $Sender->AddJsFile('options.js');
          $Sender->Head->AddRss($Sender->SelfUrl.'/feed.rss', $Sender->Head->Title());
       }
@@ -260,8 +260,19 @@ class TaggingPlugin extends Gdn_Plugin {
       
       $Sender->AddCSSFile('plugins/Tagging/design/token-input.css');
       $Sender->AddJsFile('plugins/Tagging/jquery.tokeninput.js');
-      $Sender->AddJsFile('plugins/Tagging/tagging.js');
-      $Sender->AddJsFile('plugins/Tagging/autocomplete.js');
+      $Sender->AddJsFile($this->GetResource('tagging.js', FALSE,FALSE));
+      $Sender->Head->AddString('<script type="text/javascript">
+   jQuery(document).ready(function($) {
+      $("#Form_Tags").tokenInput("'.Gdn::Request()->Url('plugin/tagsearch').'", {
+         hintText: "Start to type...",
+         searchingText: "Searching...",
+         searchDelay: 300,
+         minChars: 1,
+         maxLength: 25,
+         onFocus: function() { $(".Help").hide(); $(".HelpTags").show(); }
+     });
+   });
+</script>');
    }
    
    /**

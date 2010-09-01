@@ -2,7 +2,7 @@
 $this->Title(T('My Bookmarks'));
 include($this->FetchViewLocation('helper_functions', 'discussions', 'vanilla'));
 
-/*WriteFilterTabs($this); FIXME: Borde kanske göras i temat?*/
+WriteFilterTabs($this);
 if ($this->DiscussionData->NumRows() > 0) {
 ?>
 <ul class="DataList Discussions Bookmarks">
