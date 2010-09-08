@@ -105,23 +105,23 @@ a.Button,
    cursor: pointer;
    margin: 0;
    font-size: 11px;
-   padding: 2px;
+   padding: 5px;
    margin-left:3px;
    margin-right:3px;
-   background:#f2f2f2;
+   background:#4a4a4a;
    color: #ababab;
-	text-shadow: 0 1px 0 #fff;
-   border: 1px solid #999;
+	text-shadow: 0 0px 0 #fff;
+   border: 0px solid #999;
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px;
-	box-shadow: 0px 0px 0px #fff;
-	-moz-box-shadow: 0px 0px 0px #fff;
-	-webkit-box-shadow: 0px 0px 0px #fff;  
+	box-shadow: 0px 0px 0px #4a4a4a;
+	-moz-box-shadow: 0px 0px 0px #4a4a4a;
+	-webkit-box-shadow: 0px 0px 0px #4a4a4a;  
    }
 
 .Button:hover, #AttachFileLink {
-   color: #ababab;
-   border: 1px solid #ababab;
+   color: #fff;
+   border: 0px solid #ababab;
 }
 .Button:focus {
    background: #447BB3;
@@ -129,14 +129,15 @@ a.Button,
 
 ul.DataList a.Delete {
 	padding: 4px;
-    background:#f2f2f2;
+    background: none;
     color: #ababab;
-    border: 1px solid #ddd;
+    border: 1px solid #ababab;
 }
 
 ul.DataList a.Delete:hover {
-    border: 1px solid #ababab;
-    background: #c4c4c4;
+    color: #fff;
+    border: 1px solid #ccc;
+    background: none;
 }
 
 div.Box {
@@ -209,7 +210,7 @@ div.Menu {
 	color:#fff;
 }
 
-li.Highlight {
+#Menu li.Highlight a {
 	border-bottom:3px solid #fff;
 }
 
@@ -292,11 +293,14 @@ body.Entry form ul li label {
 }
 
 div.MessageForm, div.Tabs {
-	background:#f2f2f2;
-	border:1px solid #c4c4c4;
+	padding:10px;
+	background:#2f2f2f none repeat scroll 0 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	display:block;
 	margin-bottom:30px;
-	padding:5px 8px;
+	border-bottom: 0;
 }
 
 a.Active, div.Tabs li.Active a {
@@ -305,16 +309,17 @@ a.Active, div.Tabs li.Active a {
 }
 
 div.MessageForm a.Cancel, div.MessageForm a.Cancel:link, div.MessageForm a.Cancel:active, div.MessageForm a.Cancel:visited, div.MorePager a, div.MorePager a:link,  div.MorePager a:active, div.MorePager a:visited, a.TabLink, a.TabLink:link,  a.TabLink:active, a.TabLink:visited, div.Tabs li a, div.Tabs li a:link, div.Tabs li a:active, div.Tabs li a:visited {
-	background:#ffffff;
-	border:1px solid #c4c4c4;
+	background:#4a4a4a;
+	border:0px solid #c4c4c4;
 	font-size:12px;
 	color:#ababab;
 }
 
 div.MessageForm a.Cancel:hover, div.MorePager a:hover, a.TabLink:hover, div.Tabs li a:hover {
-	background:#e1e1e1;
-	border:1px solid #c4c4c4;
+	background:#4a4a4a;
+	border:0px solid #c4c4c4;
 	font-size:12px;
+	color:#fff;
 }
 
 ul.MessageList li.Item {
@@ -412,17 +417,44 @@ a.Bookmarking {
 /* ============================================================= blog */
 
 div.BlogCommentCount, div.BiggestButton {
-	font-size: 1.5em;
-	padding:5px;
-	width:auto;
-	text-align:center;
+	font-size: 15px;
+	padding-bottom:5px;
+	width:640px;
+	text-align:right;
+}
+
+a.BlogCommentCount, a.BiggestButton {
+	padding:10px;
+	width:100%;
 	
-	border:1px solid #c4c4c4;
-	background:#f2f2f2 none repeat scroll 0 0;
-	color:#ababab;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	-moz-box-shadow:0 0 0px #fff;
+	background:#447BB3;
+	border:1px solid #045DCD;
+	color:#fff;
+	text-shadow:0 1px 0 #376d01;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(43,89,135)),
+	    color-stop(1, rgb(61,143,219))
+	);
+	background-image; -moz-linear-gradient(
+	    center bottom,
+	    rgb(43,89,135) 0%,
+	    rgb(61,143,219) 100%
+	);
+}
+
+a.BlogCommentCount:hover, a.BiggestButton:hover {
+	color: #fff;
+   	border:1px solid #045DCD;
+	box-shadow: 0 0 10px #447BB3;
+	-moz-box-shadow:0 0 10px #447BB3;
+	-webkit-box-shadow:0 0 10px #447BB3;	 
 }
 
 div.Blogbody {
@@ -481,6 +513,38 @@ input#Form_SaveComment.Button.CommentButton{
 	margin-right:45px;
 }
 
+input.CommentButton {
+	padding:5px;
+	-moz-box-shadow:0 0 0px #fff;
+	background:#447BB3;
+	border:1px solid #045DCD;
+	color:#fff;
+	text-shadow:0 1px 0 #376d01;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(43,89,135)),
+	    color-stop(1, rgb(61,143,219))
+	);
+	background-image; -moz-linear-gradient(
+	    center bottom,
+	    rgb(43,89,135) 0%,
+	    rgb(61,143,219) 100%
+	);
+}
+
+input.CommentButton:hover {
+	color: #fff;
+   	border:1px solid #045DCD;
+	box-shadow: 0 0 10px #447BB3;
+	-moz-box-shadow:0 0 10px #447BB3;
+	-webkit-box-shadow:0 0 10px #447BB3;	 
+}
+
 #DiscussionForm input.InputBox {
 	margin-bottom:10px;
 	width:880px;
@@ -511,6 +575,10 @@ div.Comment div.CommentForm textarea {
 
 div#MessageForm textarea {
 	width:912px;
+}
+
+div#MessageForm form#Form_ConversationMessage textarea {
+	width:640px;
 }
 
 div.Comment, div.ConversationMessage {
@@ -732,7 +800,14 @@ div.Profile>div.Photo {
 }
 
 #MessageForm {
-	background:#F2F2F2;
+	padding:10px;
+	background:#2f2f2f none repeat scroll 0 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display:block;
+	margin-bottom:30px;
+	border-bottom: 0;
 }
 
 #MessageForm h2 {
@@ -816,19 +891,25 @@ div.Box dl {
 }
 
 div.Popup div.Body {
-	border:4px solid #ababab;
+	border:0px solid #ababab;
+	background:#2a2a2a;
+	color:#ccc;
 }
 
 div.Popup h1, div.Popup h2 {
-	background:#ababab;
-	border-bottom:1px solid #ddd;
+	background:#3a3a3a;
+	border-bottom:0px solid #ddd;
 }
 
 div.Popup .Footer {
-	background:#fff;
-	border-top:1px solid #fff;
+	background:#2a2a2a;
+	border-top:0px solid #fff;
 	padding:2px 6px 0 0;
 
+}
+
+body.Profile #Form_Invitation ul li label, body.Profile #Form_User ul li label, div.Popup form ul li label { /* this override is just plain stupid */
+	color:#ccc;
 }
 
 /* ============================================================= search */
@@ -858,9 +939,17 @@ body.Profile #Panel input.InputBox{
 }
 
 input.DateBox, input.InputBox, input.SmallInput, textarea {
-	border:1px solid #ababab;
+	background:#1f1f1f;
+	color: #ccc;
+	border:1px solid #6a6a6a;
 	font-size:12px;
 	padding:3px;
+}
+
+input.SmallInput:focus,
+input.InputBox:focus,
+textarea:focus {
+   background: #1f1f1f; /* stupid override */
 }
 
 /* ============================================================= sidebar */

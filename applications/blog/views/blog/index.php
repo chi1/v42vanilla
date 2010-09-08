@@ -18,7 +18,7 @@ $Session = Gdn::Session();
             $count = $Blogpost->CountComments - 1;
             $text = ($count > 1) ? $count . ' kommentarer' : 'Inga kommentarer.';
             
-           echo '<div class="BlogCommentCount">'.Anchor($text, '/discussion/'.$Blogpost->DiscussionID).'</div>';
+           echo '<div class="BlogCommentCount">'.Anchor($text, '/discussion/'.$Blogpost->DiscussionID, 'BlogCommentCount').'</div>';
 
          ?>         
                
