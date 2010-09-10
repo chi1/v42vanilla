@@ -3,7 +3,7 @@
 */
 
 html {
-	background:#003647 url(bg_top.png) repeat-x;
+	background:url(background.png) repeat;
 }
 
 body {
@@ -24,11 +24,18 @@ body {
 	margin:auto;
 }
 
+#bg {
+	background: url(bdy-bg.png) repeat-y;
+	width:1040px;
+	margin:0 auto;
+	padding:0;
+}
+
 #container {
 	margin:0 auto;
 	width:960px;
 	background:#1f1f1f;
-	border:15px solid #000;
+	border:0px solid #000;
 }
 
 a, a:link, a:visited, a:active {
@@ -412,6 +419,19 @@ a.Bookmarked {
 }
 a.Bookmarking {
    background: url(star_sprite.png) bottom center no-repeat;
+}
+
+/* ============================================================= bbcode */
+
+div.Preview div.Message blockquote, ul.MessageList div.Message blockquote {
+	background:#4a4a4a url(quotation.png) top left no-repeat;
+	padding-left:60px;
+}
+
+div.Preview div.Message code, div.Preview div.Message pre, ul.MessageList div.Message code, ul.MessageList div.Message pre {
+	background:#4a4a4a url(code.png) top left no-repeat;
+	padding-left:60px;
+	border:0;
 }
 
 /* ============================================================= blog */

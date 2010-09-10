@@ -8,6 +8,7 @@
    <div id="Frame">
    
    <div id="container-wrap">
+      <div id="bg">
       <div id="container">
       <div id="Head">
         
@@ -94,6 +95,7 @@
 		</div>
         
       <!-- End foot -->  
+        </div>
         </div>
         </div>
    </div>
