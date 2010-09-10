@@ -63,7 +63,12 @@ class VotingPlugin extends Gdn_Plugin {
 			if ($score < 0) {
 				echo '<li>' . "\n";
 				echo '<ol class="hiddencomment">' . "\n";
-				echo '<li class="hiddennotice">Comment by ' . UserAnchor(UserBuilder($Object, 'Insert')) . ' with score ' . $score . ' hidden. <a class="showhidecomment" href="#">Show/Hide</a></li>' . "\n";
+				echo '<li class="hiddennotice">';
+				echo T('Comment by ');
+				echo UserAnchor(UserBuilder($Object, 'Insert'));
+				echo T(' with score ');
+				echo $score;
+				echo T(' hidden. <a class="showhidecomment" href="#">Show/Hide</a></li>') . "\n";
 			}
 		}
 	}

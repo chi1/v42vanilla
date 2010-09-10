@@ -955,7 +955,7 @@ body.Profile #Form_Invitation ul li label, body.Profile #Form_User ul li label, 
 
 body.Profile #Panel input.InputBox{
 	margin:0 5px 2px 5px;
-	width:185px;
+	width:180px;
 }
 
 input.DateBox, input.InputBox, input.SmallInput, textarea {
