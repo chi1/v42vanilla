@@ -162,7 +162,7 @@ div.Box {
 
 body #Head h1 {
 	
-	margin:25px 0 0 40px;
+	margin:0px 0 0 20px;
 	padding:0;
 }
 
@@ -196,7 +196,7 @@ ul#Menu {
 }
 
 #Head h1 {
-	height:150px;
+	height:175px;
 }
 
 div.Menu {
@@ -254,7 +254,16 @@ div.Menu {
 }
 
 div.Preview {
-	background:#fff;
+	background:none;
+	width:770px;
+	float:right;
+	padding-left:10px;
+	border-left:1px solid #4a4a4a;
+	clear:both;
+}
+
+div.Buttons {
+	clear:both;
 }
 
 /* ============================================================= Entry Screen */
@@ -310,9 +319,9 @@ div.MessageForm, div.Tabs {
 	border-bottom: 0;
 }
 
-a.Active, div.Tabs li.Active a {
+a.Active, div.Content div.Tabs ul li.Active a:active {
 	background:#FFFFFF;
-	color:#ababab;
+	color:#fff;
 }
 
 div.MessageForm a.Cancel, div.MessageForm a.Cancel:link, div.MessageForm a.Cancel:active, div.MessageForm a.Cancel:visited, div.MorePager a, div.MorePager a:link,  div.MorePager a:active, div.MorePager a:visited, a.TabLink, a.TabLink:link,  a.TabLink:active, a.TabLink:visited, div.Tabs li a, div.Tabs li a:link, div.Tabs li a:active, div.Tabs li a:visited {
@@ -320,6 +329,14 @@ div.MessageForm a.Cancel, div.MessageForm a.Cancel:link, div.MessageForm a.Cance
 	border:0px solid #c4c4c4;
 	font-size:12px;
 	color:#ababab;
+}
+
+div.Message h1, div.Message h2, div.Message h3, div.Message h4, div.Message h5 {
+	color:#ccc;
+}
+
+a.Active, div.Tabs li.Active a {
+	color:#fff;
 }
 
 div.MessageForm a.Cancel:hover, div.MorePager a:hover, a.TabLink:hover, div.Tabs li a:hover {
@@ -345,7 +362,7 @@ ul.DataList li.Item a {
 }
 
 .Mine {
-	background:#fff;
+	background:none;
 }
 
 ul.DataList a.Title {
@@ -432,6 +449,7 @@ div.Preview div.Message code, div.Preview div.Message pre, ul.MessageList div.Me
 	background:#4a4a4a url(code.png) top left no-repeat;
 	padding-left:60px;
 	border:0;
+	min-height:40px;
 }
 
 /* ============================================================= blog */
@@ -443,7 +461,7 @@ div.BlogCommentCount, div.BiggestButton {
 	text-align:right;
 }
 
-a.BlogCommentCount, a.BiggestButton {
+a.BlogCommentCount, a.BiggestButton, div.BiggestButton a {
 	padding:10px;
 	width:100%;
 	
@@ -469,6 +487,11 @@ a.BlogCommentCount, a.BiggestButton {
 	);
 }
 
+#DiscussionContent div.BiggestButton {
+	text-align:center;	
+	width:100%;
+}
+
 a.BlogCommentCount:hover, a.BiggestButton:hover {
 	color: #fff;
    	border:1px solid #045DCD;
@@ -479,7 +502,7 @@ a.BlogCommentCount:hover, a.BiggestButton:hover {
 
 div.Blogbody {
 	text-indent:1em;
-	padding:10px;
+	padding:1em;
 }
 
 div.Blogbody p {
@@ -725,6 +748,19 @@ div.Comment div.CommentForm {
 
 h2.DiscussionTitle {
 	font-size: 30px;
+	margin-left:8px;
+	margin-right:8px;
+	padding:0.5em;
+	border-bottom:0px solid #447BB3;
+	text-align:center;
+		background:#2f2f2f none repeat scroll 0 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+ul.Blog h2.DiscussionTitle {
+	padding:0.2em;	
 }
 
 div.Comment span.Permalink, div.ConversationMessage span.Permalink {
@@ -897,7 +933,23 @@ ul.PanelInfo li {
 body.Profile ul.PanelInfo{
 	border:0px solid #f2f2f2;
 }
-body.Profile ul.PanelInfo li{
+
+body.Profile ul.PanelInfo li {
+	background:none;
+}
+
+/* två ohyggligt fula Who's Online-bugfixes följer: */
+
+body.Profile div#WhosOnline ul.PanelInfo li {
+	text-align:right;
+}
+
+body.Profile div#WhosOnline ul.PanelInfo li strong a {
+	float:left;
+}
+
+
+body.Profile div#UserOptions ul.PanelInfo li {
 	background:none;
 	text-align:center; /* Inte jättevackert kanske? */
 }
@@ -935,9 +987,16 @@ body.Profile #Form_Invitation ul li label, body.Profile #Form_User ul li label, 
 /* ============================================================= search */
 
 #Search {	
+	padding:10px;
+
 	display:block;
-	margin:0 0 10px;
-	padding:7px;
+	margin-bottom:30px;
+	border-bottom: 0;
+}
+
+body.Profile #Search {
+	text-align:right;
+	padding-right:14px;
 }
 
 
@@ -949,13 +1008,13 @@ body.Profile #Form_Invitation ul li label, body.Profile #Form_User ul li label, 
 }
 
 #Panel input.InputBox, div.AddPeople textarea.MultiComplete {
-	margin:0 5px 2px 5px;
-	width:160px;
+	margin:4px 5px 4px 5px;
+	width:150px;
 }
 
 body.Profile #Panel input.InputBox{
-	margin:0 5px 2px 5px;
-	width:180px;
+	margin:4px 5px 4px 5px;
+	width:150px;
 }
 
 input.DateBox, input.InputBox, input.SmallInput, textarea {

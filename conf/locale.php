@@ -55,6 +55,7 @@ $Definition['Your password has been changed.'] = 'Ditt lösenord har nu ändrats
 
 // Övrigt
 $Definition['Search'] = 'Sök';
+$Definition['Save'] = 'Spara';
 $Definition['Gender'] = 'Kön';
 $Definition['Email or Username'] = 'Namn';
 $Definition['Password'] = 'Lösenord';
@@ -62,6 +63,13 @@ $Definition['Remove My Picture'] = 'Ta bort min bild';
 
 // Plugins
 $Definition['Popular Tags'] = 'Populära taggar';
+
+$Definition['Who\'s Online'] = 'Inloggade medlemmar';
+
+$Definition['Signature Settings'] = 'Signaturinställningar';
+$Definition['You are editing %s\'s signature'] = 'Du ändrar just nu %ss signatur';
+$Definition['Signature Code'] = 'Signatur';
+
 
 $Definition['Comment by '] = 'Kommentar av ';
 $Definition[' with score '] = ' med ';
