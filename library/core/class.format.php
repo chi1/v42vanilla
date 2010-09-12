@@ -222,6 +222,12 @@ class Gdn_Format {
                $Mixed2 = preg_replace("#\[i\](.*?)\[/i\]#si",'<i>\\1</i>',$Mixed2);
                $Mixed2 = preg_replace("#\[u\](.*?)\[/u\]#si",'<u>\\1</u>',$Mixed2);
                $Mixed2 = preg_replace("#\[s\](.*?)\[/s\]#si",'<s>\\1</s>',$Mixed2);
+
+               $Mixed2 = preg_replace("#\[h1\](.*?)\[/h1\]#si",'<h1>\\1</h1>',$Mixed2); // FIXME: Varg edit
+               $Mixed2 = preg_replace("#\[h2\](.*?)\[/h2\]#si",'<h2>\\1</h2>',$Mixed2); // FIXME: Varg edit
+               $Mixed2 = preg_replace("#\[h3\](.*?)\[/h3\]#si",'<h3>\\1</h3>',$Mixed2); // FIXME: Varg edit
+               $Mixed2 = preg_replace("/\[youtube\](.*)youtube.com\/watch\?v=(.*)\[\/youtube\]/Usi", "<object width=\"425\" height=\"344\"><param name=\"movie\" value=\"http://www.youtube.com/v/\\2&hl=de&fs=1\"></param><param name=\"allowFullScreen\" value=\"true\"></param><embed src=\"http://www.youtube.com/v/\\2&hl=de&fs=1\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" width=\"425\" height=\"344\"></embed></object>",$Mixed2); // FIXME: Varg edit
+
                $Mixed2 = preg_replace("#\[quote=[\"']?(.*?)[\"']?\](.*?)\[/quote\]#si",'<p><cite>\\1</cite>:</p><blockquote>\\2</blockquote>',$Mixed2);
                $Mixed2 = preg_replace("#\[quote\](.*?)\[/quote\]#si",'<blockquote>\\1</blockquote>',$Mixed2);
                $Mixed2 = preg_replace("#\[code\](.*?)\[/code\]#si",'<code>\\1</code>',$Mixed2);
