@@ -5,10 +5,14 @@ Voting
 HtmLawed
 Tagging
 Signatures
+Who's Online
+Post Count
 
 Apps att enablea:
 blog
 
+
+Vid uppdatering; ta bort cache/locale_map.ini iaf. Cachen skadar överhuvudtaget inte att ta bort.
 
 Settings:
 

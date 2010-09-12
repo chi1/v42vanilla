@@ -96,7 +96,7 @@ class PostCountPlugin extends Gdn_Plugin {
    
    protected function _AttachPostCount(&$Sender) {
       $Posts = ArrayValue($Sender->EventArguments['Author']->UserID, $Sender->Data('Plugin-PostCount-Counts'));
-      echo '<div class="PostCount">'.sprintf(T(Plural($Posts,'Posts: %s','Posts: %s')),number_format($Posts,0)).'</div>';
+      echo '<div class="PostCount">'.sprintf(T(Plural($Posts,'E-peen: %s','E-peen: %s')),number_format($Posts,0)).'</div>';
    }
 
    public function Setup() {

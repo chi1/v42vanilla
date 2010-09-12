@@ -73,6 +73,9 @@ $Definition['Popular Tags'] = 'Populära taggar';
 
 $Definition['Quote'] = 'Citera';
 
+$Definition['Posts:'] = 'E-peen:';
+$Definition['Posts: %s'] = 'E-peen: %s';
+
 // Flagging
 $Definition['Title'] = 'Titel';
 $Definition['The following content has been flagged by users for moderator review.'] = 'Dessa poster har blivit anmälda av medlemmar.';
