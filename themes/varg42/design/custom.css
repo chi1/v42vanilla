@@ -10,7 +10,7 @@ body {
 	background:transparent;
 	color:#ccc;
 	text-shadow: 0px 0px 0px #000;
-	font-family:"Droid Sans","Trebuchet MS","Helvetica","Arial",sans-serif;
+	font-family:"Droid Sans","Droid Sans","Trebuchet MS","Helvetica","Arial",sans-serif;
 	font-weight:normal;
 	text-align:center;
 }
@@ -341,6 +341,14 @@ div.Message h1, div.Message h2, div.Message h3, div.Message h4, div.Message h5 {
 	color:#ccc;
 }
 
+div.Message h2 {
+	font-size:18px;
+}
+
+div.Message h3 {
+	font-size:16px;
+}
+
 a.Active, div.Tabs li.Active a {
 	color:#fff;
 }
@@ -510,8 +518,11 @@ a.BlogCommentCount:hover, a.BiggestButton:hover {
 }
 
 div.Blogbody {
-	text-indent:1em;
+	text-indent:0em;
 	padding:1em;
+
+	font-family:"Verdana",sans-serif;
+	font-size:12px;
 }
 
 div.Blogbody p {
@@ -787,6 +798,9 @@ div.Comment div.Message {
 	padding:10px;
 	margin-right:10px;
 	
+	font-family:"Verdana",sans-serif;
+	font-size:12px;
+	
 	background:#2f2f2f none repeat scroll 0 0;
 	color:#ccc;
 	-webkit-border-radius: 10px;
@@ -798,6 +812,9 @@ div.ConversationMessage div.Message {
 	float:right;
 	width:520px;
 	padding-right:10px;
+	
+	font-family:"Verdana",sans-serif;
+	font-size:12px;
 }
 
 div.OptionList {

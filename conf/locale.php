@@ -72,6 +72,7 @@ $Definition['Okay'] = 'Ja';
 $Definition['Popular Tags'] = 'Populära taggar';
 
 $Definition['Quote'] = 'Citera';
+$Definition['%s said:'] = '%s sa:';
 
 $Definition['Posts:'] = 'E-peen:';
 $Definition['Posts: %s'] = 'E-peen: %s';
