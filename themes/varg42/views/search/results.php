@@ -6,8 +6,8 @@ if (method_exists($this->SearchResults, 'NumRows') && $this->SearchResults->NumR
 	<li class="Item">
 		<div class="ItemContent">
 			<?php echo Anchor(Gdn_Format::Text($Row->Title), $Row->Url, 'Title'); ?>
-			<div class="Excerpt"><?php
-				echo Anchor(Gdn_Format::Text(SliceString($Row->Summary, 250)), $Row->Url);
+			<div class="Message" style="padding:10px;"><?php /* FIXME: UUUUGLYY */
+				echo Gdn_Format::To($Row->Summary, 'BBcode'); /* FIXME: UUUUGLYY */
 			?></div>
 			<div class="Meta">
 				<span><?php printf(T('Comment by %s'), UserAnchor($Row)); ?></span>
