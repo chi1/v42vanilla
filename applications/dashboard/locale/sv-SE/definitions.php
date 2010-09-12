@@ -1,7 +1,7 @@
 <?php
 // Date: Thu, 19 Aug 2010 14:05:55 -0400 ﻿
 $Definition['Dashboard'] = 'Dashboard';
-$Definition['Appearance'] = 'Utséende';
+$Definition['Appearance'] = 'Utseende';
 $Definition['Banner'] = 'Banner';
 $Definition['Themes'] = 'Teman';
 $Definition['Theme Options'] = 'Temsinställningar';
@@ -19,8 +19,8 @@ $Definition['Settings'] = 'Inställningar';
 $Definition['Outgoing Email'] = 'Utgående e-post';
 $Definition['Routes'] = 'Vägar';
 $Definition['Import'] = 'Importera';
-$Definition['Styles'] = 'Utséende';
-$Definition['This theme has different styles.'] = 'Detta tema har mer än ett utséende. Välj det du vill ha.';
+$Definition['Styles'] = 'Utseende';
+$Definition['This theme has different styles.'] = 'Detta tema har mer än ett utseende. Välj det du vill ha.';
 $Definition['Select'] = 'Välj';
 $Definition['Text'] = 'Text';
 $Definition['This theme has customizable text.'] = 'Detta tema har ändringsbar text.';
