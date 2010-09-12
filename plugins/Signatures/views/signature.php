@@ -15,8 +15,8 @@ echo $this->Form->Errors();
    <li>
       <?php
          echo $this->Form->Label('Settings');
-         echo $this->Form->CheckBox('Plugin.Signature.HideAll','Hide signatures?');
-         echo $this->Form->CheckBox('Plugin.Signature.HideImages','Strip images out of signatures?');
+         echo $this->Form->CheckBox('Plugin.Signature.HideAll','Göm signaturer?'); //svenskafix
+         echo $this->Form->CheckBox('Plugin.Signature.HideImages','Göm bilder i signaturer?');
       ?>
    </li>
    <li>

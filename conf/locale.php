@@ -47,7 +47,7 @@ $Definition['Email Notifications'] = 'Mailutskick';
 
 $Definition['Old Password'] = 'Gamla lösenordet';
 $Definition['New Password'] = 'Nya lösenordet';
-$Definition['Confirm Password'] = 'Nya lösenordet igen';
+$Definition['Confirm Password'] = 'Konfirmera lösenordet';
 $Definition['Change Password'] = 'Ändra lösenord!';
 $Definition['Your old password was incorrect.'] = 'Ditt gamla lösenord var inte korrekt.';
 $Definition['Your password has been changed.'] = 'Ditt lösenord har nu ändrats.';
@@ -55,14 +55,45 @@ $Definition['Your password has been changed.'] = 'Ditt lösenord har nu ändrats
 
 // Övrigt
 $Definition['Search'] = 'Sök';
+$Definition['or'] = 'eller';
 $Definition['Save'] = 'Spara';
+$Definition['Blog'] = 'Start';
 $Definition['Gender'] = 'Kön';
 $Definition['Email or Username'] = 'Namn';
 $Definition['Password'] = 'Lösenord';
 $Definition['Remove My Picture'] = 'Ta bort min bild';
+$Definition['Sign In →'] = 'Logga in →';
+
+$Definition['Confirm'] = 'Konfirmera';
+$Definition['Are you sure you want to do that?'] = 'Är du säker på det här?';
+$Definition['Okay'] = 'Ja';
 
 // Plugins
 $Definition['Popular Tags'] = 'Populära taggar';
+
+$Definition['Quote'] = 'Citera';
+
+// Flagging
+$Definition['Title'] = 'Titel';
+$Definition['The following content has been flagged by users for moderator review.'] = 'Dessa poster har blivit anmälda av medlemmar.';
+$Definition['Disable Content Flagging'] = 'Disable Content Flagging';
+$Definition['Enable Content Flagging'] = 'Enable Content Flagging';
+$Definition['There are no items awaiting moderation at this time.'] = 'Det finns inga anmälningar just nu.';
+$Definition['item'] = 'anmälan';
+$Definition['items'] = 'anmälningar';
+$Definition[' and'] = ' och';
+$Definition['other'] = 'annan';
+$Definition['others'] = 'andra';
+$Definition['person'] = 'person';
+$Definition['Reported by: '] = 'Anmäld av: ';
+$Definition['on'] = 'i';
+$Definition['On'] = 'I';
+$Definition['said:'] = 'sa:';
+$Definition['Flagged Content'] = 'Anmälningar';
+$Definition['Forum'] = 'Forum';
+$Definition['Flag'] = 'Anmäl';
+$Definition['Your complaint has been registered.'] = 'Din anmälan har mottagits.';
+$Definition['Flag this!'] = 'Rapportera!';
 
 $Definition['Who\'s Online'] = 'Inloggade medlemmar';
 
@@ -74,3 +105,5 @@ $Definition['Signature Code'] = 'Signatur';
 $Definition['Comment by '] = 'Kommentar av ';
 $Definition[' with score '] = ' med ';
 $Definition[' hidden. <a class="showhidecomment" href="#">Show/Hide</a></li>'] = ' poäng gömd. <a class="showhidecomment" href="#">Visa/Göm</a></li>';
+
+$Definition["GuestModule.Message"] = 'Du har på något sätt lyckats landa här på Varg42, ett svenskt community för programmering- och teknik-intresserade.<br /><br />Här kan du kika på bloggen där vi postar intressanta guider och dylikt eller delta i diskussionsforumet. Men först måste du självklart';

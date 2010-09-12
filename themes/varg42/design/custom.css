@@ -269,6 +269,7 @@ div.Buttons {
 /* ============================================================= Entry Screen */
 body.Entry #Content {
 	float:left;
+	width:380px;
 }
 body.Entry #Content h1 {
     font-size:19px;
@@ -284,8 +285,13 @@ body.Entry #Search{
 }
 
 body.Entry #Content div.Box {
-	background:#f2f2f2;
-	border:1px solid #c4c4c4;
+	padding:10px;
+	background:#2f2f2f none repeat scroll 0 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display:block;
+	border: 0;
 }
 body.Entry form ul li label {
 	color:#ababab;
@@ -525,11 +531,46 @@ div.Blogbody p:nth-child(1) {
 }
 
 #DiscussionForm form {
-	background:#f2f2f2;
-	border:1px solid #c4c4c4;
-	margin:0;
 	padding:20px;
+	background:#2f2f2f none repeat scroll 0 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display:block;
+	border: 0;
 	width:880px;
+}
+
+div.GuestBox a.Button, div.GuestBox a.Button:link, div.GuestBox a.Button:visited {
+	padding:5px;
+	-moz-box-shadow:0 0 0px #fff;
+	background:#447BB3;
+	border:1px solid #045DCD;
+	color:#fff;
+	text-shadow:0 1px 0 #376d01;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(43,89,135)),
+	    color-stop(1, rgb(61,143,219))
+	);
+	background-image; -moz-linear-gradient(
+	    center bottom,
+	    rgb(43,89,135) 0%,
+	    rgb(61,143,219) 100%
+	);
+}
+
+div.GuestBox a.Button:hover {
+	color: #fff;
+   	border:1px solid #045DCD;
+	box-shadow: 0 0 10px #447BB3;
+	-moz-box-shadow:0 0 10px #447BB3;
+	-webkit-box-shadow:0 0 10px #447BB3;	 
 }
 
 div.CommentForm textarea {
@@ -671,6 +712,7 @@ ul.Blog li.Item {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	margin-bottom:50px;
 }
 
 ul.MessageList li.hiddennotice {
@@ -730,6 +772,15 @@ div.OptionList {
 	text-align:right;
 	width:930px;
 	height:22px;
+}
+
+div.OptionList a {
+	font-size:10px;
+	margin-right:1em;
+}
+
+div.OptionList span.Votes a {
+	margin:0;
 }
 
 div.NumberedPager {
@@ -952,6 +1003,10 @@ body.Profile div#WhosOnline ul.PanelInfo li strong a {
 body.Profile div#UserOptions ul.PanelInfo li {
 	background:none;
 	text-align:center; /* Inte jättevackert kanske? */
+}
+
+div.Box p {
+	color:#aaa;
 }
 
 div.Box dl {

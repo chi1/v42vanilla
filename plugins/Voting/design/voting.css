@@ -102,11 +102,11 @@ ul.MessageList div.Meta span.Votes span {
 }
 span.Votes span {
 	padding: 0 4px !important;
-	color: #000 !important;
+	color: #fff !important;
 	min-width: 36px;
 }
 span.Votes a {
-	color: #000;
+	color: #ccc;
 }
 span.Votes a.VoteUp {
 	padding: 3px 4px 0;
@@ -119,7 +119,7 @@ span.Votes a.VoteDown {
 	-moz-border-radius: 0 0 3px 3px;
 }
 span.Votes a:hover {
-	color: #000;
+	color: #fff;
 }
 
 /* Arrow Sprites */

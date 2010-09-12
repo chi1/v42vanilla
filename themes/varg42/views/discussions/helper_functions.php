@@ -79,6 +79,7 @@ function WriteDiscussion($Discussion, &$Sender, &$Session, $Alt) {
 
 function WriteFilterTabs(&$Sender) {
    $Session = Gdn::Session();
+if ($Session->IsValid()) {
    $Title = property_exists($Sender, 'Category') && is_object($Sender->Category) ? $Sender->Category->Name : T('All Discussions');
    $Bookmarked = T('My Bookmarks');
    $MyDiscussions = T('My Discussions');
@@ -133,4 +134,15 @@ function WriteFilterTabs(&$Sender) {
    ?>
 </div>
    <?php
+}
+else
+{
+   if (property_exists($Sender, 'Category') && is_object($Sender->Category)) {
+      ?>
+      <div class="Tabs DiscussionsTabs">
+      ↳ <?php echo $Sender->Category->Name; ?>
+      </div>
+      <?php
+   }
+}
 }

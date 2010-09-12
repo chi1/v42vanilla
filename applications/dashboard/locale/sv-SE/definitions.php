@@ -85,7 +85,7 @@ $Definition['Sign In'] = 'Logga in';
 $Definition['Remember me on this computer'] = 'Kom ihåg mig på denna dator';
 $Definition['or'] = 'eller';
 $Definition['Apply for Membership'] = 'Registrera dig';
-$Definition['Forgot your password?'] = 'Glömt lösenord?';
+$Definition['Forgot your password?'] = 'Glömt ditt lösenord?';
 $Definition['I agree to the <a id="TermsOfService" class="Popup" target="terms" href="%s">terms of service</a>'] = 'Jag accepterar <a id="TermsOfService" class="Popup" target="terms" href="%s">reglerna och villkoren</a>.';
 $Definition['Email Unavailable'] = 'E-postadressen är fel';
 $Definition['Name Unavailable'] = 'Namnet är fel';

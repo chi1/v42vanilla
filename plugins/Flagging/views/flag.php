@@ -13,14 +13,13 @@ echo $this->Form->Errors();
 <ul>
    <li>
       <div class="Warning">
-         You are about to flag this <?php echo $this->Data['Plugin.Flagging.Data']['Context']; ?> for moderator review. If you're sure you want to do this,
-         please enter a brief reason/explanation below, then press 'Flag this!'.
+         Du håller på att anmäla denna  <?php echo T($this->Data['Plugin.Flagging.Data']['Context']); ?>. Tänk först över ifall du är väldigt säker på att det är något du vill göra, och fyll sedan i en bra anledning nedan och tryck "Rapportera!".
       </div>
-      Link to content: <?php echo Anchor("{$UcContext} #{$ElementID}", $URL); ?> - by <?php echo $this->Data['Plugin.Flagging.Data']['ElementAuthor']; ?>
+      Länk till <?php echo T($this->Data['Plugin.Flagging.Data']['Context']); ?>en: <?php echo Anchor("{$UcContext} #{$ElementID}", $URL); ?> - av <?php echo $this->Data['Plugin.Flagging.Data']['ElementAuthor']; ?>
    </li>
    <li>
       <?php
-         echo $this->Form->Label('Reason', 'Plugin.Flagging.Reason');
+         echo $this->Form->Label('Anledning', 'Plugin.Flagging.Reason');
          echo $this->Form->TextBox('Plugin.Flagging.Reason', array('MultiLine' => TRUE));
       ?>
    </li>

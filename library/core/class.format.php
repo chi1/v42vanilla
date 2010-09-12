@@ -287,6 +287,9 @@ class Gdn_Format {
     *  http://ca.php.net/manual/en/function.date.php
     * @return string
     */
+    
+    // FIXME: Här har jag ändrat lite för att få lite mer svenska datum
+    
    public static function Date($Timestamp = '', $Format = '') {
       // Was a mysqldatetime passed?
       if (!is_numeric($Timestamp))
@@ -307,13 +310,13 @@ class Gdn_Format {
             $Format = T('Date.DefaultTimeFormat', '%l:%M%p');
          } else if (date('Y', $Timestamp) == date('Y', time())) {
             // If the timestamp is the same year, show the month and date
-            $Format = T('Date.DefaultDayFormat', '%B %e');
+            $Format = T('Date.DefaultDayFormat', '%e %B');
          } else if (date('Y', $Timestamp) != date('Y', time())) {
             // If the timestamp is not the same year, just show the year
-            $Format = T('Date.DefaultYearFormat', '%B %Y');
+            $Format = T('Date.DefaultYearFormat', '%e %B, %Y');
          } else {
             // Otherwise, use the date format
-            $Format = T('Date.DefaultFormat', '%B %e, %Y');
+            $Format = T('Date.DefaultFormat', '%e %B, %Y');
          }
       }
 
