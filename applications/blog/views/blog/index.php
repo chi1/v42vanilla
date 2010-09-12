@@ -10,6 +10,10 @@ $Session = Gdn::Session();
    		<p><?php echo Gdn_Format::To($Blogpost->Body, $Blogpost->Format); ?></p>
    	</div>
    	<div class="Meta">
+   	<div class="BlogAuthor">
+   	<span class="Author"><?php echo Anchor($Blogpost->FirstName, '/profile/'.$Blogpost->FirstName, '') ?></span><br />
+   	<?php  if ($Blogpost->FirstPhoto != '') { ?><span class="Photo"><?php echo Anchor(Img('uploads/'.ChangeBasename($Blogpost->FirstPhoto, 'n%s')), '/profile/'.$Blogpost->FirstName, ''); ?></span><?php } ?>
+   	</div>
          <?php if ($Blogpost->Closed == '1') { ?>
          <span class="Closed"><?php echo T('Closed'); ?></span>
          <?php } ?>
@@ -24,8 +28,7 @@ $Session = Gdn::Session();
                
 
       </div>
-   </div>
+   </div>   
 </li>
 <?php endforeach; ?>
 </ul>
-
