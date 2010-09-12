@@ -6,7 +6,7 @@ if (!function_exists('WriteComment'))
 if ($Session->IsValid()) {
    // Bookmark link
    echo Anchor(
-      '<span>*</span>',
+      '<span>&lt;3</span>',
       '/vanilla/discussion/bookmark/'.$this->Discussion->DiscussionID.'/'.$Session->TransientKey().'?Target='.urlencode($this->SelfUrl),
       'Bookmark' . ($this->Discussion->Bookmarked == '1' ? ' Bookmarked' : ''),
       array('title' => T($this->Discussion->Bookmarked == '1' ? 'Unbookmark' : 'Bookmark'))

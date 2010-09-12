@@ -428,20 +428,23 @@ a.Bookmark,
 a.Bookmarking {
 	float: right;
    display: block;
-   background: url(star_sprite.png) top center no-repeat;
+   color:#FFF;
+   background:none;
    height: 22px;
    width: 22px;
    margin: 2px 4px 0 4px;
 }
 a.Bookmark span,
 a.Bookmarking span {
-   display: none;
+   display: inline;
 }
 a.Bookmarked {
-   background: url(star_sprite.png) center center no-repeat;
+   background:none;
+   color:#F00;
 }
 a.Bookmarking {
-   background: url(star_sprite.png) bottom center no-repeat;
+   background:none;
+   color:#F00;
 }
 
 /* ============================================================= bbcode */
