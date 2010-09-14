@@ -460,6 +460,7 @@ a.Bookmarking {
 div.Preview div.Message blockquote, ul.MessageList div.Message blockquote, div.Message blockquote {
 	background:#4a4a4a url(quotation.png) top left no-repeat;
 	padding-left:60px;
+	padding-top:20px;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -852,7 +853,7 @@ div.Comment div.CommentForm {
 }
 
 h2.DiscussionTitle {
-	font-size: 30px;
+	font-size: 26px;
 	margin-left:8px;
 	margin-right:8px;
 	padding:0.5em;
@@ -864,6 +865,10 @@ h2.DiscussionTitle {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+}
+
+h2.DiscussionTitle a {
+	font-weight:normal;
 }
 
 ul.Blog h2.DiscussionTitle {
