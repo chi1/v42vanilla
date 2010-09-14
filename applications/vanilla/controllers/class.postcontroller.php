@@ -73,8 +73,8 @@ class PostController extends VanillaController {
          if ($DraftID == 0)
             $DraftID = $this->Form->GetFormValue('DraftID', 0);
             
-         $Draft = $this->Form->ButtonExists('Save Draft') ? TRUE : FALSE;
-         $Preview = $this->Form->ButtonExists('Preview') ? TRUE : FALSE;
+         $Draft = $this->Form->ButtonExists('Spara utkast') ? TRUE : FALSE; // UGLEH
+         $Preview = $this->Form->ButtonExists('Förhandsgranska') ? TRUE : FALSE; // UGLEH
          if (!$Preview) {
             // Check category permissions
             if ($this->Form->GetFormValue('Announce', '') != '' && !$Session->CheckPermission('Vanilla.Discussions.Announce', TRUE, 'Category', $this->CategoryID))
