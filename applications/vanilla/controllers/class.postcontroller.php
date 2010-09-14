@@ -133,15 +133,15 @@ class PostController extends VanillaController {
             if (!$Preview) {
                // If the discussion was not a draft
                if (!$Draft) {
-                  // Redirect to the new discussion
+                  // Redirect to the new discussion FIXME: eller inte. Koden nedan borde vara mycket vackrare, men det fixar vi post-release.
                   $Discussion = $this->DiscussionModel->GetID($DiscussionID);
                   $this->EventArguments['Discussion'] = $Discussion;
                   $this->FireEvent('AfterDiscussionSave');
                   
                   if ($this->_DeliveryType == DELIVERY_TYPE_ALL) {
-                     Redirect('/discussion/'.$DiscussionID.'/'.Gdn_Format::Url($Discussion->Name));
+                     Redirect('/discussion/'); // Redirect('/discussion/'.$DiscussionID.'/'.Gdn_Format::Url($Discussion->Name));
                   } else {
-                     $this->RedirectUrl = Url('/discussion/'.$DiscussionID.'/'.Gdn_Format::Url($Discussion->Name));
+                     $this->RedirectUrl = Url('/discussion/'); // $this->RedirectUrl = Url('/discussion/'.$DiscussionID.'/'.Gdn_Format::Url($Discussion->Name));
                   }
                } else {
                   // If this was a draft save, notify the user about the save
