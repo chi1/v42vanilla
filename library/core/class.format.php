@@ -218,6 +218,9 @@ class Gdn_Format {
 					$Mixed2 = $Mixed;
 					/*$Mixed2 = str_replace("\n", '<br />', $Mixed2); FIXME: quickfix för en bugg med kodtaggar, den lär fixas till nästa vanillarelease */
 
+               $Mixed2 = str_replace("<", '&lt;', $Mixed2);
+               $Mixed2 = str_replace(">", '&gt;', $Mixed2);
+
                $Mixed2 = preg_replace("#\[b\](.*?)\[/b\]#si",'<b>\\1</b>',$Mixed2);
                $Mixed2 = preg_replace("#\[i\](.*?)\[/i\]#si",'<i>\\1</i>',$Mixed2);
                $Mixed2 = preg_replace("#\[u\](.*?)\[/u\]#si",'<u>\\1</u>',$Mixed2);

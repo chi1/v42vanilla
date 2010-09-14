@@ -25,13 +25,13 @@ var QuotesPlugin = {
             QuotesPlugin.RemoveSpinner(Data.Quote.selector);
          return;
       }
-      
+         
       switch (Data.Quote.format) {
          case 'Html':   // HTML
             var Append = '<blockquote rel="'+Data.Quote.authorname+'">'+Data.Quote.body+'</blockquote>'+"\n";
             break;
             
-         case 'BBCode':
+         case 'BBcode':
             var Append = '[quote="'+Data.Quote.authorname+'"]'+Data.Quote.body+'[/quote]'+"\n";
             break;
          
@@ -62,7 +62,7 @@ var QuotesPlugin = {
       var Quoted = $('#'+QuotedElement);
       if (!Quoted) return false;
       QuotesPlugin.AddSpinner(QuotedElement);
-      var QuotebackURL = gdn.definition('WebRoot')+'/plugin/quotes/getquote/'+QuotedElement;
+      var QuotebackURL = gdn.url('plugin/Quotes/getquote/'+QuotedElement);
       jQuery.ajax({
          url: QuotebackURL,
          type: 'GET',
