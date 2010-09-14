@@ -60,7 +60,7 @@ class VotingPlugin extends Gdn_Plugin {
 			$Object = GetValue('Object', $Sender->EventArguments);
 			$CommentID = $Object->CommentID;
 			$score = StringIsNullOrEmpty($Object->Score) ? 0 : $Object->Score;
-			if ($score < 0) {
+			if ($score < -1) {
 				echo '<li>' . "\n";
 				echo '<ol class="hiddencomment">' . "\n";
 				echo '<li class="hiddennotice">';
@@ -77,7 +77,7 @@ class VotingPlugin extends Gdn_Plugin {
 		if ($Sender->EventArguments['Type'] == 'Comment') {
 			$Object = GetValue('Object', $Sender->EventArguments);
 			$score = StringIsNullOrEmpty($Object->Score) ? 0 : $Object->Score;
-			if ($score < 0) {
+			if ($score < -1) {
 				echo '</ol>' . "\n";
 				echo '</li>' . "\n";
 			}

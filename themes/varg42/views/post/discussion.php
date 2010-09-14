@@ -46,7 +46,7 @@ if (C('Vanilla.Categories.Use') && $this->CategoryID > 0 && $this->CategoryData-
       if (!property_exists($this, 'Discussion') || !is_object($this->Discussion) || (property_exists($this, 'Draft') && is_object($this->Draft))) {
          echo $this->Form->Button('Spara utkast', array('class' => 'Button DraftButton'));
       }
-      echo $this->Form->Button('Förhandsgranska', array('class' => 'Button PreviewButton'));
+      //echo $this->Form->Button('Förhandsgranska', array('class' => 'Button PreviewButton')); FIXME: Buggy
       $this->FireEvent('AfterFormButtons');
       echo Anchor(T('Cancel'), $CancelUrl, 'Cancel');
       echo "</div>\n";

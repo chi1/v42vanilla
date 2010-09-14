@@ -65,7 +65,7 @@ class Gdn_UploadImage extends Gdn_Upload {
     * @param string The format in which the output image should be saved. Options are: jpg, png, and gif. Default is jpg.
     * @param int An integer value representing the qualityof the saved image. Ranging from 0 (worst quality, smaller file) to 100 (best quality, biggest file).
     */
-   public static function SaveImageAs($Source, $Target, $Height = '', $Width = '', $Crop = FALSE, $OutputType = 'jpg', $ImageQuality = 75) {
+   public static function SaveImageAs($Source, $Target, $Height = '', $Width = '', $Crop = FALSE, $OutputType = 'jpg', $ImageQuality = 95) {
       // Make sure type, height & width are properly defined
       
       if (!function_exists('gd_info'))
