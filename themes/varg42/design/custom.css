@@ -817,10 +817,16 @@ div.Comment div.Message {
 div.ConversationMessage div.Message {
 	float:right;
 	width:520px;
-	padding-right:10px;
+	padding:10px;
 	
 	font-family:"Verdana",sans-serif;
 	font-size:12px;
+	
+	background:#2f2f2f none repeat scroll 0 0;
+	color:#ccc;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 div.OptionList {
