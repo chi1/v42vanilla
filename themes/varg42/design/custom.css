@@ -913,8 +913,16 @@ ul.Activities div.Meta a:hover {
 }
 
 ul.Activities ul.DataList li {
-	background:#F2F2F2 none repeat scroll 0 0;
-	border:1px solid #C4C4C4;
+	background:#4a4a4a none repeat scroll 0 0;
+	border:0px solid #C4C4C4;
+}
+
+ul.Activities li.Condensed div.Excerpt {
+	color:#ccc;
+}
+
+ul.Activities a.CommentLink, ul.Activities a.CommentLink:hover {
+	background:#1f1f1f;
 }
 
 ul.Activities li.CommentForm input.Button {
