@@ -35,8 +35,12 @@ class BlogController extends Gdn_Controller {
        $this->BlogData = $BlogModel->GetBlog('0', $Postsperpage, array('d.CategoryID' => $BlogcategoryID));
 
       // Add Modules
+      $RecentBlogModule = new RecentBlogModule($this);
+      $RecentBlogModule->GetData();
+      
+      $this->AddModule('RecentBlogModule');
       $this->AddModule('GuestModule');
-      $this->AddModule('RecentActivityModule');
+      $this->AddModule($RecentBlogModule);
 
        $this->Render();
    }
