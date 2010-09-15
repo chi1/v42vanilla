@@ -460,11 +460,25 @@ a.Bookmarking {
 div.Preview div.Message blockquote, ul.MessageList div.Message blockquote, div.Message blockquote {
 	background:#4a4a4a url(quotation.png) top left no-repeat;
 	padding-left:60px;
-	padding-top:20px;
+	padding-top:5px;
+	min-height:40px;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+}
+
+div.Preview div.Message blockquote blockquote, ul.MessageList div.Message blockquote blockquote, div.Message blockquote blockquote {
+	margin-left:-60px; /* smålustig anti-pyramidfix */
+	margin-right:-16px;
+	margin-top:20px;
+	border-top:1px solid #5a5a5a;
+	border-bottom:1px solid #3c3c3c;
+}
+
+div.Preview div.Message blockquote cite, ul.MessageList div.Message blockquote cite, div.Message blockquote cite {
+	font-size:0.8em;
+	text-decoration:underline;
 }
 
 div.Message code, div.Message pre, div.Preview div.Message code, div.Preview div.Message pre, ul.MessageList div.Message code, ul.MessageList div.Message pre {
