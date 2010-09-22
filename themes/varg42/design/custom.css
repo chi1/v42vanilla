@@ -472,8 +472,8 @@ div.Preview div.Message blockquote blockquote, ul.MessageList div.Message blockq
 	margin-left:-60px; /* smålustig anti-pyramidfix */
 	margin-right:-16px;
 	margin-top:20px;
-	border-top:1px solid #5a5a5a;
-	border-bottom:1px solid #3c3c3c;
+	border-top:1px solid #5c5c5c;
+	border-bottom:1px solid #3a3a3a;
 }
 
 div.Preview div.Message blockquote cite, ul.MessageList div.Message blockquote cite, div.Message blockquote cite {

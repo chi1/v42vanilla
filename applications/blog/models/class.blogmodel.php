@@ -28,7 +28,7 @@ class BlogModel extends VanillaModel {
       
       $this->SQL
          ->Select('d.InsertUserID', '', 'FirstUserID')
-         ->Select('d.DateInserted', '', 'FirstDate')
+         ->Select('d.DateUpdated', '', 'FirstDate')
 			->Select('d.CountBookmarks')
          ->Select('iu.Name', '', 'FirstName') // <-- Need these for rss!
          ->Select('iu.Photo', '', 'FirstPhoto')
